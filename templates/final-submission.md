@@ -4,7 +4,6 @@
 
 - **Team name:**
 - **Team members:**
-- **Track:** (Track 1 / Track 2)
 
 ## Project Title
 

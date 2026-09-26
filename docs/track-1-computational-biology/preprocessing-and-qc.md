@@ -20,9 +20,9 @@ For each cell, compute:
 - Mitochondrial gene fraction (% mitochondrial reads)
 
 **Filtering thresholds** (adjust based on data):
-- Remove cells with very low total UMI counts (e.g., < 500–1000)
-- Remove cells with very few detected genes (e.g., < 200–500)
-- Remove cells with high mitochondrial fraction (e.g., > 15–20%)
+- Remove cells with very low total UMI counts (e.g., < 500-1000)
+- Remove cells with very few detected genes (e.g., < 200-500)
+- Remove cells with high mitochondrial fraction (e.g., > 15-20%)
 
 For each gene:
 - Remove genes detected in very few cells (e.g., < 3 cells)
@@ -45,12 +45,12 @@ For each gene:
 ### 6. Feature Selection
 
 - Identify highly variable genes (HVGs) for downstream dimensionality reduction.
-- Typical range: 2,000–4,000 HVGs.
+- Typical range: 2,000-4,000 HVGs.
 - Exclude mitochondrial and ribosomal genes from HVG selection if they dominate.
 
 ### 7. Dimensionality Reduction
 
-- PCA on HVGs, typically 30–50 components.
+- PCA on HVGs, typically 30-50 components.
 - Inspect variance explained.
 
 ### 8. Clustering and Annotation

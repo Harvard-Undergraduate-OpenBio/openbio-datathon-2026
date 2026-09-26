@@ -18,7 +18,7 @@ This document defines every metadata field expected in the OpenBio-provided chal
 | `compartment` | string | OpenBio-derived | `fetal`, `maternal`, or `unknown` |
 | `cell_type_original` | string | Source-provided | Cell-type label from original publication |
 | `cell_type_harmonized` | string | OpenBio-derived | Cross-dataset harmonized cell-type label |
-| `cell_type_confidence` | float | OpenBio-derived | Annotation confidence score (0–1) |
+| `cell_type_confidence` | float | OpenBio-derived | Annotation confidence score (0-1) |
 | `sequencing_platform` | string | Source-provided | Platform (e.g., `10x_3p_v3`) |
 | `batch` | string | OpenBio-derived | Batch identifier for technical covariate control |
 | `sex_if_available` | string | Source-provided | `male`, `female`, or `unknown` (fetal sex) |

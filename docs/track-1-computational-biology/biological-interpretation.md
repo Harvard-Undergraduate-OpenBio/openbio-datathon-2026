@@ -9,18 +9,18 @@ The goal of Track 1 is not just to identify differential interactions but to gen
 ### Step 1: Contextualize
 
 - Which cell types are involved in the differential interaction?
-- Are they at the maternal–fetal interface?
+- Are they at the maternal-fetal interface?
 - Is the sender fetal and the receiver maternal (or vice versa)?
 
 ### Step 2: Connect to Known Biology
 
 - Does the altered pathway relate to known PE mechanisms?
-  - Trophoblast invasion failure
-  - Incomplete spiral-artery remodeling
-  - Immune tolerance breakdown
-  - Excessive inflammation
-  - Abnormal angiogenesis
-  - Hypoxia or oxidative stress
+ - Trophoblast invasion failure
+ - Incomplete spiral-artery remodeling
+ - Immune tolerance breakdown
+ - Excessive inflammation
+ - Abnormal angiogenesis
+ - Hypoxia or oxidative stress
 - Is there published evidence supporting this interaction in placental biology?
 
 ### Step 3: Formulate a Hypothesis
@@ -49,7 +49,7 @@ Confidence level and limitations:
 
 ## What Good Interpretation Looks Like
 
-- Connects specific ligand–receptor changes to a plausible biological mechanism.
+- Connects specific ligand-receptor changes to a plausible biological mechanism.
 - Acknowledges that scRNA-seq inference predicts potential communication, not proven signaling.
 - Considers confounders (gestational age, batch, cell composition).
 - Proposes a concrete, testable follow-up experiment.

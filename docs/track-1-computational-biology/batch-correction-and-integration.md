@@ -21,7 +21,7 @@ When combining datasets from different donors, studies, platforms, or sequencing
 
 ## Recommendations
 
-1. Start with Harmony as a baseline — it is fast and effective for most cases.
+1. Start with Harmony as a baseline - it is fast and effective for most cases.
 2. If batch effects are severe or complex, try scVI.
 3. Always inspect UMAP/PCA before and after integration to verify that batch effects are reduced without over-correcting biological signal.
 4. Report which method was used and with what parameters.

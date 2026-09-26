@@ -16,7 +16,7 @@ submissions/
     │   ├── fig3_*.png
     │   └── fig4_*.png
     ├── final-submission.md      # Completed final submission template
-    ├── hypothesis-card.md       # (Track 1) Completed hypothesis card
+    ├── hypothesis-card.md       # Completed hypothesis card
     └── analysis-plan.md         # Your analysis plan
 ```
 
@@ -33,6 +33,6 @@ submissions/
 - One notebook or script that runs top-to-bottom.
 - 2-4 figures (PNG at 300 DPI or PDF).
 - 1-2 page written interpretation.
-- One completed hypothesis card (Track 1) or intervention proposal (Track 2).
+- One completed hypothesis card.
 - Cite all data sources.
 - State limitations clearly.

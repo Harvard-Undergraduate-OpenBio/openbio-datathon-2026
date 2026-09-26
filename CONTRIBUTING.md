@@ -1,8 +1,6 @@
 # Contributing to the OpenBio 2026 Datathon Repository
 
-Thank you for your interest in contributing. This repository serves as the
-participant-facing source of truth for the datathon, so we welcome improvements
-to documentation, starter notebooks, data catalogs, and utilities.
+Thank you for your interest in contributing. This repository serves as the participant guide for the datathon, so we welcome improvements to documentation, starter notebooks, data catalogs, and utilities.
 
 ## How to Contribute
 
@@ -25,7 +23,6 @@ to documentation, starter notebooks, data catalogs, and utilities.
 ## What We Do Not Accept
 
 - Large raw datasets (use download scripts and manifests instead)
-- DHS Program microdata or any data that requires registration/approval
 - Repackaged copies of HCA datasets (link to canonical sources instead)
 - Changes to the challenge rules or rubric without organizer approval
 

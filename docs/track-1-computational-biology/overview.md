@@ -1,8 +1,20 @@
-# Track 1: Computational Biology — Overview
+# Track 1: Computational Biology - Overview
+
+[![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-E7298A?style=flat-square)](data-catalog.md)
+[![Data Dictionary](https://img.shields.io/badge/Docs-Data_Dictionary-0072B2?style=flat-square)](data-dictionary.md)
+[![Cell Glossary](https://img.shields.io/badge/Docs-Cell_Glossary-7570B3?style=flat-square)](cell-type-glossary.md)
+[![Metadata Glossary](https://img.shields.io/badge/Docs-Metadata_Glossary-7570B3?style=flat-square)](metadata-glossary.md)
+[![Methods](https://img.shields.io/badge/Docs-Communication_Methods-66A61E?style=flat-square)](communication-methods.md)
+[![QC Guide](https://img.shields.io/badge/Docs-Preprocessing_QC-66A61E?style=flat-square)](preprocessing-and-qc.md)
+[![Integration](https://img.shields.io/badge/Docs-Batch_Integration-66A61E?style=flat-square)](batch-correction-and-integration.md)
+[![Differential Comm](https://img.shields.io/badge/Docs-Diff_Communication-66A61E?style=flat-square)](differential-communication.md)
+[![Interpretation](https://img.shields.io/badge/Docs-Interpretation-66A61E?style=flat-square)](biological-interpretation.md)
+[![Limitations](https://img.shields.io/badge/Docs-Limitations-D95F02?style=flat-square)](limitations-and-responsible-use.md)
+[![Citations](https://img.shields.io/badge/Docs-Citations-555555?style=flat-square)](citations.md)
 
 ## Research Question
 
-> Which ligand–receptor communication programs between fetal trophoblast and maternal decidual/immune cells are altered in preeclampsia, and which altered interactions yield the strongest testable hypotheses about failed placentation, immune tolerance, vascular remodeling, or maternal systemic immune activation?
+> Which ligand-receptor communication programs between fetal trophoblast and maternal decidual/immune cells are altered in preeclampsia, and which altered interactions yield the strongest testable hypotheses about failed placentation, immune tolerance, vascular remodeling, or maternal systemic immune activation?
 
 ## Biological Focus
 
@@ -41,17 +53,17 @@ Every team should be capable of completing the challenge with the supplied proce
 
 1. Load an OpenBio-provided annotated object (`.h5ad` or Seurat `.rds`).
 2. Inspect metadata and cell-type annotations.
-3. Select a biologically coherent sender–receiver comparison.
-4. Run or reproduce one cell–cell communication strategy.
+3. Select a biologically coherent sender-receiver comparison.
+4. Run or reproduce one cell-cell communication strategy.
 5. Compare disease and control interaction patterns.
-6. Produce 2–4 figures and a prioritised list of candidate interaction programs.
+6. Produce 2-4 figures and a prioritised list of candidate interaction programs.
 7. State one testable follow-up hypothesis and its limitations.
 
 ## Advanced Directions (Optional)
 
 | Direction | Example Question | Possible Output |
 |---|---|---|
-| Disease-network rewiring | Which sender–receiver edges appear or disappear in PE? | Differential interaction network, ranked altered pairs |
+| Disease-network rewiring | Which sender-receiver edges appear or disappear in PE? | Differential interaction network, ranked altered pairs |
 | Stage or severity | Do early- and late-onset disease patterns differ? | Stratified network comparison |
 | Method comparison | Do CellChat, CellPhoneDB, LIANA, or NicheNet converge? | Agreement matrix and consensus ranking |
 | Spatial anchoring | Are predicted interactions plausible in the spatial atlas? | Spatial proximity / colocalization figure |
@@ -60,7 +72,7 @@ Every team should be capable of completing the challenge with the supplied proce
 
 ## Important Scientific Distinction
 
-scRNA-seq ligand–receptor inference predicts **potential communication from expression patterns**. It does not directly measure physical contact, ligand secretion, receptor activation, extracellular vesicles, or causality. Teams should be rewarded for stating this limitation clearly.
+scRNA-seq ligand-receptor inference predicts **potential communication from expression patterns**. It does not directly measure physical contact, ligand secretion, receptor activation, extracellular vesicles, or causality. Teams should be rewarded for stating this limitation clearly.
 
 ## Preventing Invalid Comparisons
 
@@ -70,17 +82,3 @@ scRNA-seq ligand–receptor inference predicts **potential communication from ex
 - **Batch and platform effects:** A disease/control difference can be technical unless study design and preprocessing are assessed.
 - **Cell-composition changes:** Increased representation of a cell type can be mistaken for within-cell-type expression or signaling change.
 - **Model-dependent predictions:** Different communication tools and databases will yield different network edges.
-
-## Key Documents
-
-- [Data Catalog](data-catalog.md)
-- [Data Dictionary](data-dictionary.md)
-- [Cell & Tissue Glossary](cell-type-glossary.md)
-- [Metadata Glossary](metadata-glossary.md)
-- [Communication Methods](communication-methods.md)
-- [Preprocessing and QC](preprocessing-and-qc.md)
-- [Batch Correction and Integration](batch-correction-and-integration.md)
-- [Differential Communication](differential-communication.md)
-- [Biological Interpretation](biological-interpretation.md)
-- [Limitations and Responsible Use](limitations-and-responsible-use.md)
-- [Citations](citations.md)
