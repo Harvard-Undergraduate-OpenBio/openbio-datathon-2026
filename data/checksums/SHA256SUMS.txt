@@ -1,0 +1,6 @@
+# SHA256 Checksums for OpenBio-Derived Challenge Artifacts
+#
+# Run: sha256sum -c SHA256SUMS.txt
+#
+# Artifacts will be added here once processed datasets are finalized.
+# Format: <sha256_hash>  <filename>

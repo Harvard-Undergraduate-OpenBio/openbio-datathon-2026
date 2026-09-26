@@ -1,0 +1,20 @@
+# CodeMETA for OpenBio 2026 Datathon
+
+title: "OpenBio 2026 Datathon"
+description: "Maternal-Fetal Cell Communication in Preeclampsia — participant repository with data catalogs, glossaries, starter notebooks, and submission templates."
+version: "0.1.0"
+doi: ""
+date-published: "2026"
+repository-code: "https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026"
+license: "MIT"
+author:
+  - family-names: "Oleksy"
+    given-names: "David P."
+    email: "exec@harvardopenbio.org"
+    affiliation: "Harvard Undergraduate OpenBio"
+keywords:
+  - preeclampsia
+  - single-cell RNA-seq
+  - cell-cell communication
+  - maternal-fetal interface
+  - datathon
