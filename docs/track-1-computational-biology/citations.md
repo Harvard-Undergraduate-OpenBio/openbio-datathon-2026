@@ -4,7 +4,7 @@
 
 1. Admati, T., Skarbianskis, M., et al. (2023). Placenta PE single-cell RNA-seq CellRanger files (raw data). Figshare. https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471
 
-2. Vento-Tormo, R., Efremova, M., et al. (2018). Single-cell reconstruction of the early maternal-fetal interface in humans. Nature, 563(7731), 347-353. Human Cell Atlas Project: https://explore.data.humancellatlas.org/projects/f83165c5-e2ea-4d15-a5cf-33ff3550bffde
+2. Vento-Tormo, R., Efremova, M., et al. (2018). Single-cell reconstruction of the early maternal-fetal interface in humans. Nature, 563(7731), 347-353. Human Cell Atlas Project: https://explore.data.humancellatlas.org/projects/f83165c5-e2ea-4d15-a5cf-33f3550bffde
 
 3. Spatial multiomics trophoblast atlas. Human Cell Atlas Project: https://explore.data.humancellatlas.org/projects/aecfd908-674c-4d4e-b36e-0c1ceab02245
 

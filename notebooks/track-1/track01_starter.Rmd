@@ -60,7 +60,8 @@ dds <- DESeqDataSetFromMatrix(
   design = ~ group
 )
 dds <- DESeq(dds)
-res <- results(dds, contrast = c("group", "case", "control"))
+# Replace your_case_level and your_control_level with levels from the challenge guide
+res <- results(dds, contrast = c("group", "your_case_level", "your_control_level"))
 ```
 
 ## Exploratory plots

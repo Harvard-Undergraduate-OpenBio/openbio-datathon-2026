@@ -14,8 +14,8 @@ Participant data package for Track 01. Files that HDAG prepares are pending rele
 | `track01_counts_vt.csv` | Pending HDAG | Villous-tissue raw count matrix, genes by 30 samples |
 | `track01_metadata_vt.csv` | Pending HDAG | One row per sample with clinical fields |
 | `track01_data_dictionary.md` | Pending HDAG | Field definitions and allowed values |
-| `track01_reference_genes.csv` | Available | Orientation-only reference genes by program |
-| `interpretation/track01_marker_matrix.csv` | Available | Broad cell-class markers for gene localization |
+| `track01_reference_genes.csv` | Available (v0.1.0) | Orientation-only reference genes by program |
+| `interpretation/track01_marker_matrix.csv` | Available (v0.1.0) | Broad cell-class markers for gene localization |
 | `extension/pseudobulk/` | Pending HDAG | Donor-by-cell-type pseudobulk matrices |
 | `provenance/` | Pending HDAG | Checksums and provenance records |
 
