@@ -1,0 +1,76 @@
+---
+title: "Track 01 Starter"
+output: html_document
+---
+
+<style>
+body { font-family: 'DM Sans', 'Helvetica Neue', sans-serif; }
+</style>
+
+# Track 01 Starter
+
+Scaffold for importing the Track 01 data package and checking integrity before plotting. No contrast is selected and no final result is computed.
+
+## Load the data
+
+```{r}
+counts_path <- "../../data/track-01/track01_counts_vt.csv"
+metadata_path <- "../../data/track-01/track01_metadata_vt.csv"
+
+read_or_pending <- function(path) {
+  if (file.exists(path) && file.info(path)$size > 0) {
+    read.csv(path, row.names = 1)
+  } else {
+    message(basename(path), " is pending HDAG release.")
+    NULL
+  }
+}
+
+counts <- read_or_pending(counts_path)
+metadata <- read_or_pending(metadata_path)
+
+if (!is.null(counts)) print(dim(counts))
+if (!is.null(metadata)) print(dim(metadata))
+```
+
+## Integrity checks
+
+Confirm the data are what they claim to be before any analysis. Do not silently fix values that fail a check. Report them in your interpretation memo.
+
+```{r}
+if (!is.null(counts) && !is.null(metadata)) {
+  cat("samples in both files:", length(intersect(rownames(metadata), colnames(counts))), "\n")
+  cat("counts are nonnegative:", all(as.matrix(counts) >= 0), "\n")
+  cat("counts are integral:", all(as.matrix(counts) %% 1 == 0), "\n")
+  cat("duplicate genes:", sum(duplicated(rownames(counts))), "\n")
+  cat("duplicate samples:", sum(duplicated(colnames(counts))), "\n")
+}
+```
+
+## DESeq2 skeleton
+
+Fill in the design and contrast from the challenge guide. This chunk is deliberately not evaluated.
+
+```{r, eval=FALSE}
+library(DESeq2)
+
+dds <- DESeqDataSetFromMatrix(
+  countData = as.matrix(counts),
+  colData = metadata,
+  design = ~ group
+)
+dds <- DESeq(dds)
+res <- results(dds, contrast = c("group", "case", "control"))
+```
+
+## Exploratory plots
+
+```{r, eval=FALSE}
+library(ggplot2)
+
+vsd <- vst(dds)
+plotPCA(vsd, intgroup = "group")
+
+sample_dists <- dist(t(assay(vsd)))
+pheatmap::pheatmap(as.matrix(sample_dists))
+```

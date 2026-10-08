@@ -1,16 +1,16 @@
 # Track 1: Computational Biology - Overview
 
-[![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-E7298A?style=flat-square)](data-catalog.md)
-[![Data Dictionary](https://img.shields.io/badge/Docs-Data_Dictionary-0072B2?style=flat-square)](data-dictionary.md)
-[![Cell Glossary](https://img.shields.io/badge/Docs-Cell_Glossary-7570B3?style=flat-square)](cell-type-glossary.md)
-[![Metadata Glossary](https://img.shields.io/badge/Docs-Metadata_Glossary-7570B3?style=flat-square)](metadata-glossary.md)
-[![Methods](https://img.shields.io/badge/Docs-Communication_Methods-66A61E?style=flat-square)](communication-methods.md)
-[![QC Guide](https://img.shields.io/badge/Docs-Preprocessing_QC-66A61E?style=flat-square)](preprocessing-and-qc.md)
-[![Integration](https://img.shields.io/badge/Docs-Batch_Integration-66A61E?style=flat-square)](batch-correction-and-integration.md)
-[![Differential Comm](https://img.shields.io/badge/Docs-Diff_Communication-66A61E?style=flat-square)](differential-communication.md)
-[![Interpretation](https://img.shields.io/badge/Docs-Interpretation-66A61E?style=flat-square)](biological-interpretation.md)
-[![Limitations](https://img.shields.io/badge/Docs-Limitations-D95F02?style=flat-square)](limitations-and-responsible-use.md)
-[![Citations](https://img.shields.io/badge/Docs-Citations-555555?style=flat-square)](citations.md)
+[![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-0fe995?style=flat-square)](data-catalog.md)
+[![Data Dictionary](https://img.shields.io/badge/Docs-Data_Dictionary-13deba?style=flat-square)](data-dictionary.md)
+[![Cell Glossary](https://img.shields.io/badge/Docs-Cell_Glossary-0fe995?style=flat-square)](cell-type-glossary.md)
+[![Metadata Glossary](https://img.shields.io/badge/Docs-Metadata_Glossary-13deba?style=flat-square)](metadata-glossary.md)
+[![Methods](https://img.shields.io/badge/Docs-Communication_Methods-0fe995?style=flat-square)](communication-methods.md)
+[![QC Guide](https://img.shields.io/badge/Docs-Preprocessing_QC-13deba?style=flat-square)](preprocessing-and-qc.md)
+[![Integration](https://img.shields.io/badge/Docs-Batch_Integration-0fe995?style=flat-square)](batch-correction-and-integration.md)
+[![Differential Comm](https://img.shields.io/badge/Docs-Diff_Communication-13deba?style=flat-square)](differential-communication.md)
+[![Interpretation](https://img.shields.io/badge/Docs-Interpretation-0fe995?style=flat-square)](biological-interpretation.md)
+[![Limitations](https://img.shields.io/badge/Docs-Limitations-13deba?style=flat-square)](limitations-and-responsible-use.md)
+[![Citations](https://img.shields.io/badge/Docs-Citations-0fe995?style=flat-square)](citations.md)
 
 ## Research Question
 
@@ -58,6 +58,15 @@ Every team should be capable of completing the challenge with the supplied proce
 5. Compare disease and control interaction patterns.
 6. Produce 2-4 figures and a prioritised list of candidate interaction programs.
 7. State one testable follow-up hypothesis and its limitations.
+
+## Track 01 Data Package
+
+[![Data Package](https://img.shields.io/badge/Data-Track_01_Package-13deba?style=flat-square)](../../data/track-01/README.md)
+[![Starter Notebook](https://img.shields.io/badge/Code-Starter_Notebook-0fe995?style=flat-square)](../../notebooks/track-1/track01_starter.ipynb)
+[![Starter Rmd](https://img.shields.io/badge/Code-Starter_Rmd-13deba?style=flat-square)](../../notebooks/track-1/track01_starter.Rmd)
+[![Browser Guide](https://img.shields.io/badge/Docs-Browser_Guide-0fe995?style=flat-square)](zeisel-browser-guide.md)
+
+The Track 01 data package holds the bulk count matrix, sample metadata, reference genes, and interpretation resources. Files that HDAG prepares are pending release and are currently blank. Start from the starter notebook or starter Rmd and follow the participant journey in the challenge guide.
 
 ## Advanced Directions (Optional)
 

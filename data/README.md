@@ -7,6 +7,7 @@ This directory contains manifests, checksums, and small toy subsets - not full r
 - `manifest.csv` - One row per data resource with metadata (dataset ID, role, source URL, format, license, etc.)
 - `checksums/SHA256SUMS.txt` - Integrity verification for OpenBio-derived artifacts
 - `sample_data/` - Small toy subsets for testing notebooks
+- `track-01/` - Track 01 participant data package (HDAG-prepared files pending)
 
 ## Rules
 

@@ -2,9 +2,9 @@
 
 ## Dataset Manifest
 
-[![Primary Dataset](https://img.shields.io/badge/Role-Primary-1B9E77?style=flat-square)](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471)
-[![HCA Reference](https://img.shields.io/badge/Role-Reference-0072B2?style=flat-square)](https://explore.data.humancellatlas.org/projects/f83165c5-e2ea-4d15-a5cf-33ff3550bffde)
-[![GEO Extension](https://img.shields.io/badge/Role-Extension-D95F02?style=flat-square)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192693)
+[![Primary Dataset](https://img.shields.io/badge/Role-Primary-0fe995?style=flat-square)](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471)
+[![HCA Reference](https://img.shields.io/badge/Role-Reference-13deba?style=flat-square)](https://explore.data.humancellatlas.org/projects/f83165c5-e2ea-4d15-a5cf-33ff3550bffde)
+[![GEO Extension](https://img.shields.io/badge/Role-Extension-0fe995?style=flat-square)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192693)
 
 | Dataset ID | Role | Source Title | Source URL | Access Level | Format | Raw/Processed | Species | Tissue | Disease Context | Donor Count | Cell Count (approx.) | License | Distribution Policy | Citation | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -13,11 +13,19 @@
 | HCA_SPATIAL_TROPHOBLAST | Optional advanced | Spatial multiomics trophoblast atlas | https://explore.data.humancellatlas.org/projects/aecfd908-674c-4d4e-b36e-0c1ceab02245 | Public (HCA) | h5ad, spatial | Processed | Human | Placenta, decidua | Healthy reference | 34 | ~325,700 | HCA Data Release Policy / CC BY 4.0 | Link-only | Refer to HCA project page | Includes spatial/multiomic files; technically heavier |
 | GSE192693 | Optional extension | Maternal PBMC scRNA-seq in PE and controls | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192693 | Public (GEO) | Raw + processed | Both | Human | PBMC | PE and controls | TBD | ~80,429 | GEO data use terms | Link-only | Refer to GEO accession | T cells, B cells, NK cells, monocytes; stretch question for placenta-PBMC link |
 | GSE87692 | Background/methodological | Trophoblast-endometrial communication study | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87692 | Public (GEO) | Raw + processed | Both | Human | Trophoblast, endometrium | Communication study | TBD | TBD | GEO data use terms | Link-only | Refer to GEO accession | Historical benchmark; verify before required use |
+| GSE198373 | Optional reference | Regionally distinct trophoblast placenta atlas | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198373 | Public (GEO) | mtx, tsv | Processed | Human | Placenta villi, basal plate, smooth chorion | Healthy reference | 4 | TBD | GEO data use terms | Link-only | Marsh et al. 2022 | Regional atlas of trophoblast across villous and smooth chorion regions |
 
 ## Access Notes
 
 - **HCA datasets** are governed by the HCA Data Release Policy and CC BY 4.0. Do not assume unrestricted redistribution of repackaged copies. Link to canonical sources.
 - **GEO datasets** (GSE192693, GSE87692) are subject to NCBI GEO data use terms. Verify exact file types and reuse terms before assigning as required resources.
+
+## Interpretation Resources
+
+[![Zeisel Browser](https://img.shields.io/badge/Tool-Zeisel_Browser-13deba?style=flat-square)](zeisel-browser-guide.md)
+[![Marker Matrix](https://img.shields.io/badge/Data-Marker_Matrix-0fe995?style=flat-square)](../../data/track-01/interpretation/track01_marker_matrix.csv)
+
+The Zeisel browser and the marker matrix in the [Track 01 data package](../../data/track-01/README.md) support gene localization. See the [browser guide](zeisel-browser-guide.md) for permitted uses and the fallback plan.
 
 ## OpenBio-Derived Challenge Artifacts
 
