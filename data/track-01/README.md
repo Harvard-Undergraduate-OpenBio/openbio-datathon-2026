@@ -1,5 +1,6 @@
 # Track 01 Data Package
 
+[![Participant Guide](https://img.shields.io/badge/Guide-Track_01-13deba?style=flat-square)](../../docs/track-1-computational-biology/README.md)
 [![Track 01](https://img.shields.io/badge/Track-01-0fe995?style=flat-square)](../../docs/track-1-computational-biology/overview.md)
 [![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-13deba?style=flat-square)](../../docs/track-1-computational-biology/data-catalog.md)
 [![Starter Notebooks](https://img.shields.io/badge/Code-Starter_Notebooks-0fe995?style=flat-square)](../../notebooks/track-1)

@@ -1,5 +1,6 @@
 # Track 1: Computational Biology - Overview
 
+[![Participant Guide](https://img.shields.io/badge/Guide-Track_01-0fe995?style=flat-square)](README.md)
 [![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-0fe995?style=flat-square)](data-catalog.md)
 [![Data Dictionary](https://img.shields.io/badge/Docs-Data_Dictionary-13deba?style=flat-square)](data-dictionary.md)
 [![Cell Glossary](https://img.shields.io/badge/Docs-Cell_Glossary-0fe995?style=flat-square)](cell-type-glossary.md)

@@ -10,6 +10,7 @@ Welcome to the Harvard Undergraduate OpenBio 2026 Datathon repository. This repo
 
 ## Quick Links
 
+[![Track 01 Participant Guide](https://img.shields.io/badge/Guide-Track_01-0fe995?style=flat-square)](docs/track-1-computational-biology/README.md)
 [![Challenge Overview](https://img.shields.io/badge/Docs-Challenge_Overview-13deba?style=flat-square)](docs/challenge-overview.md)
 [![Track 1 Overview](https://img.shields.io/badge/Docs-Track_1_Overview-0fe995?style=flat-square)](docs/track-1-computational-biology/overview.md)
 [![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-13deba?style=flat-square)](docs/track-1-computational-biology/data-catalog.md)
