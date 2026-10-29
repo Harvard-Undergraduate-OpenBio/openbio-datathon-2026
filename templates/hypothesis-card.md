@@ -10,9 +10,9 @@ What clinical or biological problem does this hypothesis address?
 
 Which datasets and cell types are involved?
 
-## Observed Differential Communication Result
+## Observed Result
 
-What did your analysis show? Be specific about the interaction(s).
+What did your analysis show? Be specific about the genes and cell types.
 
 ## Proposed Mechanism
 
@@ -36,4 +36,4 @@ Does this suggest a possible therapeutic or diagnostic target?
 
 ## Confidence Level and Limitations
 
-State your confidence level (low/medium/high) and explain why. Acknowledge the limitations of scRNA-seq communication inference.
+State your confidence level (low/medium/high) and explain why. Acknowledge what expression data cannot establish.

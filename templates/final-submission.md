@@ -9,7 +9,7 @@
 
 ## Summary (1-2 paragraphs)
 
-Provide a brief summary of your project, including the research question, methods, and key findings.
+Provide a brief summary of your project, including the research question, methods and key findings.
 
 ## Key Figures
 
@@ -50,4 +50,4 @@ State the limitations of your analysis.
 
 ## References
 
-Cite all data sources, tools, and relevant literature used in your analysis.
+Cite all data sources, tools and relevant literature used in your analysis.

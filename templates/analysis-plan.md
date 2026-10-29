@@ -6,7 +6,7 @@ State your specific research question clearly.
 
 ## Datasets
 
-List the datasets you will use (refer to the data catalog for IDs).
+List the datasets you will use (see the data catalog).
 
 | Dataset ID | Role | Why This Dataset |
 |---|---|---|
@@ -16,13 +16,12 @@ List the datasets you will use (refer to the data catalog for IDs).
 
 Describe the analysis steps:
 
-1. Data loading and preprocessing
-2. QC and filtering
-3. Cell-type composition analysis
-4. Communication inference (tool and parameters)
-5. Differential communication analysis
-6. Biological interpretation
-7. Visualization
+1. Data loading and checks
+2. Comparison and why you chose it
+3. Statistical model and thresholds
+4. Gene browser lookups (at least three genes)
+5. Optional extension analyses
+6. Interpretation and figures
 
 ## Confounders and Controls
 

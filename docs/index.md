@@ -1,6 +1,6 @@
 # OpenBio 2026 Datathon - Challenge Overview
 
-[![Track 1](https://img.shields.io/badge/Track-Computational_Biology-1B9E77?style=flat-square)](track-1-computational-biology/overview.md)
+[![Track 1](https://img.shields.io/badge/Track-Computational_Biology-1B9E77?style=flat-square)](track-1-computational-biology/README.md)
 
 ## Summary
 
@@ -8,13 +8,11 @@ The OpenBio 2026 Datathon is organized by Harvard Undergraduate OpenBio. Partici
 
 ## Track 1: Computational Biology
 
-**Research Question:** Which ligand-receptor communication programs between fetal trophoblast and maternal decidual/immune cells are altered in preeclampsia, and which altered interactions yield the strongest testable hypotheses about failed placentation, immune tolerance, vascular remodeling, or maternal systemic immune activation?
+Teams study how gene activity in the placenta differs between preeclampsia and control pregnancies, using bulk RNA-seq as the core and single-cell reference data to ask which cell types may be involved.
 
-Teams use publicly available single-cell RNA-seq datasets from preeclamptic and healthy placental tissue to infer differential cell-cell communication patterns.
-
-[![Track 1 Overview](https://img.shields.io/badge/Docs-Track_1_Overview-1B9E77?style=flat-square)](track-1-computational-biology/overview.md)
+[![Track 1 Overview](https://img.shields.io/badge/Guide-Track_01-1B9E77?style=flat-square)](track-1-computational-biology/README.md)
 [![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-E7298A?style=flat-square)](track-1-computational-biology/data-catalog.md)
-[![Research Questions](https://img.shields.io/badge/Docs-Research_Questions-7570B3?style=flat-square)](track-1-computational-biology/research-questions.md)
+[![Research Questions](https://img.shields.io/badge/Docs-Starter_Questions-7570B3?style=flat-square)](track-1-computational-biology/research-questions.md)
 
 ## Key Dates
 
@@ -32,10 +30,10 @@ The datathon is open to undergraduate students at Harvard and affiliated institu
 
 ## Getting Started
 
-1. Read the [challenge overview](challenge-overview.md) and the Track 1 overview.
-2. Review the [data catalog](track-1-computational-biology/data-catalog.md).
+1. Read the [Track 01 participant guide](track-1-computational-biology/README.md).
+2. Download and verify the data with the [download guide](../data/track-01/README.md).
 3. Set up your environment using the [environment files](../environment/).
-4. Work through the starter notebooks in [`notebooks/`](../notebooks/).
+4. Run a starter notebook in [`notebooks/track-1`](../notebooks/track-1).
 5. Prepare your submission using the [templates](../templates/).
 
 ## Contact

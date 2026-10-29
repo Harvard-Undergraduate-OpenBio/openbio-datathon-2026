@@ -2,80 +2,84 @@
 
 **Maternal-Fetal Cell Communication in Preeclampsia**
 
-[![Data Package](https://img.shields.io/badge/Data-Track_01_Package-0fe995?style=flat-square)](../../data/track-01/README.md)
-[![Python Starter](https://img.shields.io/badge/Code-Python_Starter-13deba?style=flat-square)](../../notebooks/track-1/track01_starter.ipynb)
-[![R Starter](https://img.shields.io/badge/Code-R_Starter-0fe995?style=flat-square)](../../notebooks/track-1/track01_starter.Rmd)
-[![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-13deba?style=flat-square)](data-catalog.md)
+[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-0fe995?style=flat-square)](../../data/track-01/README.md)
+[![Starter Questions](https://img.shields.io/badge/Docs-Starter_Questions-13deba?style=flat-square)](research-questions.md)
+[![Python Starter](https://img.shields.io/badge/Code-Python_Starter-0fe995?style=flat-square)](../../notebooks/track-1/track01_starter.ipynb)
+[![R Starter](https://img.shields.io/badge/Code-R_Starter-13deba?style=flat-square)](../../notebooks/track-1/track01_starter.Rmd)
 
-Investigate placental gene-expression differences in preeclampsia and use single-cell references to ask which cells may carry the affected programs. Track 01 uses a bulk RNA-seq core, with an optional single-cell extension.
+This track looks at how gene activity in the placenta differs between pregnancies with preeclampsia and control pregnancies. Your team will identify those differences, then use reference data to understand which placental cell types may be involved.
 
-## Before You Start
+The data arrive prepared and documented. Choosing comparisons and interpreting the results is up to you.
 
-The HDAG data package has not been released. Its files are intentionally blank; the starter notebooks can open now, but analysis must wait for the prepared data.
+## What You Will Use
 
-| Resource | Role | Availability |
-|---|---|---|
-| Villous-tissue counts and sample metadata | Required bulk analysis | Pending HDAG |
-| Zeisel gene browser | Required gene localization | External resource |
-| Reference gene list | Orientation, not an answer key | In the repository |
-| Donor-by-cell-type pseudobulk | Optional extension | Pending HDAG |
-
-You do not need to download sequencing reads or raw Cell Ranger files. Use the prepared release once it is available; do not assemble a replacement competition dataset.
-
-## Setup
-
-For Python, create the repository environment and launch Jupyter from the repository root:
-
-```bash
-conda env create -f environment/environment.yml
-conda activate openbio-datathon-2026
-jupyter lab
-```
-
-Open `notebooks/track-1/track01_starter.ipynb` and run it from top to bottom. Keep the repository folder structure so its relative data paths work.
-
-For R, open `notebooks/track-1/track01_starter.Rmd` in RStudio. Install DESeq2 for the analysis scaffold. Its plotting chunks require ggplot2 and pheatmap; a verified Track 01 R environment is not yet supplied.
-
-## Analysis Workflow
-
-| Stage | Your task |
+| Resource | Role |
 |---|---|
-| Load | Import the released count matrix and sample sheet. Read the accompanying dictionary. |
-| Check | Verify sample alignment and nonnegative integer counts. Record missing metadata rather than imputing it. |
-| Explore | Inspect sample-level QC and overall structure. Explain any exclusions instead of choosing them to strengthen a result. |
-| Compare | Choose an organizer-approved contrast and justify the comparison. Consider gestational age and control type. |
-| Test | Run differential expression. Document the model and report multiple-testing-adjusted results. |
-| Interpret | Conduct one pathway-level analysis using a documented gene-set version. Explain your selection criteria. |
-| Localize | Examine three to six selected genes in the Zeisel browser. Record the cell classes and relevant caveats. |
-| Propose | State one testable hypothesis and a follow-up experiment. Explain what the analysis cannot establish. |
+| GSE203507 bulk RNA-seq (villous tissue) | Required core dataset for all teams |
+| Zeisel/Admati gene browser | Interpretation layer, required for at least three genes |
+| Admati/Skarbianskis single-cell data | Optional extension, prepared as pseudobulk |
+| GSE198373 | Reference only, linked |
+| HCA fetal-maternal interface | Reference only, linked |
+| HCA spatial multiomics trophoblast atlas | Reference only, linked |
 
-The R starter contains an unevaluated DESeq2 skeleton. The Python starter supports exploration; it is not a complete differential-expression pipeline. Neither starter provides a finished result.
+See the [download guide](../../data/track-01/README.md) for every file and link.
 
-### Approved Contrasts
+### Core Data
 
-<!-- Intentionally blank pending organizer approval and HDAG metadata. -->
+GSE203507 contains 30 samples of villous tissue from the placenta. It is bulk RNA sequencing, which measures gene activity across a whole tissue sample rather than in individual cells.
 
-## Gene Localization
+The count matrix shows how many RNA reads were counted for each gene in each sample. The metadata file describes each pregnancy, including preeclampsia status and clinical details such as gestational age. Missing values are marked `NA` and never filled in.
 
-[![Browser Guide](https://img.shields.io/badge/Docs-Browser_Guide-0fe995?style=flat-square)](zeisel-browser-guide.md)
-[![Zeisel Browser](https://img.shields.io/badge/Tool-Zeisel_Browser-13deba?style=flat-square)](https://storage.googleapis.com/www_zeisellab/PE_web/pe_web_test_v1.html)
+### Optional Single-Cell Extension
 
-Use the browser to support cell-localization hypotheses, not to validate differential expression. If it is unavailable, consult the broad marker table and the linked reference atlases; marker overlap alone is not evidence that your selected gene is expressed in a particular cell class.
+The Admati/Skarbianskis dataset gives a more detailed view of the placenta: 86,752 labeled cells from 26 donors. We combined counts within each donor and cell type, so you work with a smaller table while each donor remains one independent biological sample. Multiple sequencing libraries from the same person do not count as separate patients.
 
-## Reference Datasets
+The early-onset comparison in this extension is exploratory. It has three control donors against ten preeclampsia donors.
 
-[![Admati Raw Deposit](https://img.shields.io/badge/Source-Admati_Raw_Deposit-0fe995?style=flat-square)](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471)
-[![GSE198373](https://img.shields.io/badge/Reference-GSE198373-13deba?style=flat-square)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198373)
-[![HCA Interface](https://img.shields.io/badge/Reference-HCA_Interface-0fe995?style=flat-square)](https://explore.data.humancellatlas.org/projects/f83165c5-e2ea-4d15-a5cf-33f3550bffde)
-[![HCA Spatial Atlas](https://img.shields.io/badge/Reference-HCA_Spatial_Atlas-13deba?style=flat-square)](https://explore.data.humancellatlas.org/projects/aecfd908-674c-4d4e-b36e-0c1ceab02245)
+### Interpretation Resources
 
-These resources support interpretation; they are not interchangeable disease-control cohorts. Check tissue context and pregnancy stage before making a cross-study comparison.
+The gene browser and reference atlases show where genes are active and which genes mark broad cell types. Most are linked rather than downloaded. A small [marker table](../../data/track-01/interpretation/track01_marker_matrix.csv) helps you connect findings to placental cell types, and the [browser guide](../../data/track-01/interpretation/zeisel_browser_guide.md) explains how to use the browser and what to do if it is down.
 
-## Optional Extension
+## Starter Questions
 
-Use donor-by-cell-type pseudobulk only after the organizer-prepared extension is released. Donors, not individual cells, are the biological replicates.
+Pick one or more of these, or adapt them. Full list with notes: [starter questions](research-questions.md).
 
-A curated single-cell extension may also be offered later. Do not assume that an annotated object is currently available or required for the core analysis.
+1. What makes a placenta affected by preeclampsia look different at the genetic level?
+2. Does preeclampsia leave the same genetic footprint in every pregnancy?
+3. Which placental cells show the biggest differences between preeclampsia and control pregnancies?
+4. Is preeclampsia associated with a different mix of placental cells, or different behavior from the same cells?
+5. What can the placenta tell us about the connection between preeclampsia and restricted fetal growth?
+6. How much of the difference between preeclampsia and control samples could be explained by when delivery happened?
+7. Do early-onset and late-onset preeclampsia tell different biological stories?
+8. What might gene activity reveal about communication between placental cells in preeclampsia?
+9. Do the genes that differ in preeclampsia normally work across the placenta, or are they concentrated in specific cell types?
+10. What can a map of healthy early pregnancy help us understand about the changes seen in preeclampsia?
+
+## Getting Started
+
+1. Download and verify the data package using the [download guide](../../data/track-01/README.md).
+2. Set up an environment.
+
+   ```bash
+   conda env create -f environment/environment.yml
+   conda activate openbio-datathon-2026
+   jupyter lab
+   ```
+
+   R users can open `notebooks/track-1/track01_starter.Rmd` in RStudio and install DESeq2, ggplot2 and pheatmap.
+3. Run a starter notebook from top to bottom. It loads the files and checks them. It does not choose a comparison, set thresholds or produce results.
+4. Read `track01_data_dictionary.md` before choosing a comparison.
+5. Choose your question and comparison, then document every analysis decision.
+6. Look up at least three of your genes in the Zeisel/Admati gene browser.
+
+## Ground Rules
+
+- There is no answer key. We do not provide comparisons, top gene lists, pathway results, chosen outliers or a biological story.
+- Broad cell-class labels are supplied. You decide how much confidence to place in them.
+- Treat the donor as the unit of replication. Cells and libraries from one person are not independent samples.
+- Keep `NA` values as missing. Report any value flagged in the data dictionary rather than correcting it silently.
+- Bulk differences may reflect a change in cell mix rather than a change within cells. Placental tissue collected at delivery reflects late pregnancy, not earlier events.
+- Use the released package. Do not rebuild the competition dataset from raw sources.
 
 ## Submit
 
@@ -84,31 +88,4 @@ A curated single-cell extension may also be offered later. Do not assume that an
 [![Rubric](https://img.shields.io/badge/Docs-Submission_Rubric-0fe995?style=flat-square)](../submission-rubric.md)
 [![Submission Instructions](https://img.shields.io/badge/Docs-Submission_Instructions-13deba?style=flat-square)](../../submissions/README.md)
 
-| Deliverable | Include |
-|---|---|
-| Reproducible notebook or script | Data version, environment details, and documented analysis choices |
-| Results package | Differential-expression results and pathway output, with two to four figures |
-| Interpretation memo | One to two pages covering the comparison and limitations, plus a completed hypothesis card |
-| Presentation | A five-minute explanation of the question and evidence supporting your hypothesis |
-
-Judging considers biological rationale, reproducibility, analytical quality, hypothesis quality, and communication. Cite the datasets and tools used in your submission.
-
-## Boundaries
-
-Bulk expression differences may reflect changing cell proportions rather than within-cell changes. Expression-based communication hypotheses do not establish receptor activation or causality.
-
-There is no required gene list or predetermined biological conclusion. Explain uncertainty and keep observations separate from proposed mechanisms.
-
-## HDAG Release Details
-
-### Package Version and Freeze Date
-
-<!-- Intentionally blank pending HDAG release. -->
-
-### Metadata and Data Dictionary
-
-<!-- Intentionally blank pending HDAG release. -->
-
-### Validation and Checksums
-
-<!-- Intentionally blank pending HDAG release. -->
+Follow the [submission instructions](../../submissions/README.md) and cite every dataset and tool you use ([citations](citations.md)).

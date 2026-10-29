@@ -7,7 +7,7 @@ The OpenBio 2026 Datathon welcomes participants of all skill levels. Whether you
 ## Support Channels
 
 - **Mentorship:** Experienced mentors will be available during the datathon to answer questions and provide guidance.
-- **Office hours:** Scheduled help sessions for environment setup, data exploration, and analysis.
+- **Office hours:** Scheduled help sessions for environment setup, data exploration and analysis.
 - **Slack/Discord:** A communication channel for real-time questions and team coordination.
 - **Email:** exec@harvardopenbio.org for questions before or after the event.
 
@@ -17,6 +17,5 @@ If you need accommodations (e.g., extended time, assistive technology, alternati
 
 ## Beginner-Friendly Resources
 
-- The [cell & tissue glossary](track-1-computational-biology/cell-type-glossary.md) and [metadata glossary](track-1-computational-biology/metadata-glossary.md) define key terms.
-- Starter notebooks walk through each step with comments.
-- The minimum viable analysis is designed to be completable in a weekend.
+- The [cell & tissue glossary](track-1-computational-biology/cell-type-glossary.md) defines key terms.
+- Starter notebooks show how to load and check the data.

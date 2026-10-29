@@ -1,37 +1,26 @@
-# Track 1: Research Questions
+# Track 01 Starter Questions
 
-## Primary Question
+[![Participant Guide](https://img.shields.io/badge/Guide-Track_01-0fe995?style=flat-square)](README.md)
+[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-13deba?style=flat-square)](../../data/track-01/README.md)
 
-Which ligand-receptor communication programs between fetal trophoblast and maternal decidual/immune cells are altered in preeclampsia, and which altered interactions yield the strongest testable hypotheses about failed placentation, immune tolerance, vascular remodeling, or maternal systemic immune activation?
+Choose one or more questions, or adapt one to your team's interests. Each has many defensible answers. The table shows where to start, not what to find.
 
-## Sub-Questions
+| # | Question | Where to start |
+|---|---|---|
+| 1 | What makes a placenta affected by preeclampsia look different at the genetic level? | Core counts and metadata |
+| 2 | Does preeclampsia leave the same genetic footprint in every pregnancy? | Core counts and metadata |
+| 3 | Which placental cells show the biggest differences between preeclampsia and control pregnancies? | Pseudobulk extension, gene browser |
+| 4 | Is preeclampsia associated with a different mix of placental cells, or different behavior from the same cells? | Pseudobulk extension, marker table |
+| 5 | What can the placenta tell us about the connection between preeclampsia and restricted fetal growth? | Core metadata (FGR status) |
+| 6 | How much of the difference between preeclampsia and control samples could be explained by when delivery happened? | Core metadata (gestational age, control type) |
+| 7 | Do early-onset and late-onset preeclampsia tell different biological stories? | Pseudobulk extension (exploratory) |
+| 8 | What might gene activity reveal about communication between placental cells in preeclampsia? | Pseudobulk extension, gene browser |
+| 9 | Do the genes that differ in preeclampsia normally work across the placenta, or are they concentrated in specific cell types? | Gene browser, marker table, reference atlases |
+| 10 | What can a map of healthy early pregnancy help us understand about the changes seen in preeclampsia? | HCA fetal-maternal interface |
 
-### Trophoblast invasion and vascular remodeling
-- Which trophoblast-decidual interactions are disrupted in preeclampsia?
-- Are EVT invasion or spiral-artery remodeling pathways enriched in differential communication?
-- Do differential interactions cluster around specific vascular niches?
+## Before You Commit to a Question
 
-### Immune tolerance and inflammation
-- Which maternal immune cell types show altered communication with fetal cells in PE?
-- Are tolerogenic signaling programs reduced in preeclampsia?
-- Are pro-inflammatory ligand-receptor pairs upregulated in PE?
-
-### Disease subtypes and staging
-- Do early-onset and late-onset PE show distinct communication signatures?
-- Does disease severity correlate with the magnitude of communication rewiring?
-
-### Method comparison
-- Do CellChat, CellPhoneDB, LIANA, and NicheNet identify convergent or divergent interactions?
-- Which interactions are robust across methods and databases?
-
-### Maternal systemic link (optional)
-- Do placental communication changes correspond to PBMC immune-state shifts in GSE192693?
-- Are there shared pathway-level changes across placenta and peripheral blood?
-
-### Spatial context (optional)
-- Are predicted trophoblast-maternal interactions plausible in the spatial multiomics atlas?
-- Do predicted interactions localize to trophoblast invasion or arterial remodeling niches?
-
-### Extracellular vesicles (exploratory)
-- Can teams formulate a transcriptomic hypothesis consistent with EV-mediated signaling?
-- Note: This is hypothesis generation, not direct measurement of EV exchange.
+- The core preeclampsia samples in GSE203507 are early-onset. Late-onset comparisons rely on the single-cell extension.
+- The early-onset comparison in the extension has three control donors against ten preeclampsia donors. Treat it as exploratory.
+- Reference atlases come from healthy pregnancies at earlier stages. Use them for context, not as control groups.
+- Expression patterns suggest possible signaling between cells. They do not show that signaling happened.

@@ -9,7 +9,7 @@ body { font-family: 'DM Sans', 'Helvetica Neue', sans-serif; }
 
 # Track 01 Starter
 
-Scaffold for importing the Track 01 data package and checking integrity before plotting. No contrast is selected and no final result is computed.
+Scaffold for loading the Track 01 data package and checking it before plotting. It does not choose a comparison, set thresholds or compute results.
 
 ## Load the data
 
@@ -21,7 +21,7 @@ read_or_pending <- function(path) {
   if (file.exists(path) && file.info(path)$size > 0) {
     read.csv(path, row.names = 1)
   } else {
-    message(basename(path), " is pending HDAG release.")
+    message(basename(path), " is pending release.")
     NULL
   }
 }
@@ -49,7 +49,7 @@ if (!is.null(counts) && !is.null(metadata)) {
 
 ## DESeq2 skeleton
 
-Fill in the design and contrast from the challenge guide. This chunk is deliberately not evaluated.
+Fill in the design and comparison your team chose. This chunk is deliberately not evaluated.
 
 ```{r, eval=FALSE}
 library(DESeq2)
@@ -60,7 +60,7 @@ dds <- DESeqDataSetFromMatrix(
   design = ~ group
 )
 dds <- DESeq(dds)
-# Replace your_case_level and your_control_level with levels from the challenge guide
+# Replace your_case_level and your_control_level with the groups your team chose
 res <- results(dds, contrast = c("group", "your_case_level", "your_control_level"))
 ```
 
