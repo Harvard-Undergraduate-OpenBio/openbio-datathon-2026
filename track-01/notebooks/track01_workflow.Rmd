@@ -1,0 +1,188 @@
+---
+title: "Track 01 Workflow Notebook (R)"
+output: html_document
+---
+
+This notebook follows the [analysis workflow](../3-workflow.md) step by step. Each numbered section matches a step in that guide. The notebook handles the coding. Your team makes the decisions, in chunks marked **You decide**.
+
+Run chunks from top to bottom with the green play buttons, or click Knit to run everything.
+
+## 0. Setup
+
+Install packages once with `source("../../environment/install_r_packages.R")`.
+
+```{r setup, message=FALSE}
+library(DESeq2)
+library(ggplot2)
+
+data_dir <- "../data"
+results_dir <- "results"
+dir.create(results_dir, showWarnings = FALSE)
+
+load_table <- function(path) {
+  if (!file.exists(path) || file.info(path)$size == 0) {
+    message(basename(path), ": pending release (file is empty for now).")
+    return(NULL)
+  }
+  read.csv(path, row.names = 1, check.names = FALSE)
+}
+```
+
+## 1. Pick a Question
+
+**You decide:** Our question is ...
+
+## 2. Load and Check the Data
+
+If a check prints `FALSE` or a nonzero duplicate count, note it in your analysis plan and tell an organizer. Do not edit the data files.
+
+```{r load}
+counts <- load_table(file.path(data_dir, "track01_counts_vt.csv"))
+metadata <- load_table(file.path(data_dir, "track01_metadata_vt.csv"))
+
+if (!is.null(counts) && !is.null(metadata)) {
+  cat("Counts:", nrow(counts), "genes x", ncol(counts), "samples\n")
+  cat("Metadata:", nrow(metadata), "samples x", ncol(metadata), "fields\n\n")
+  cat("Samples in both tables:  ", length(intersect(colnames(counts), rownames(metadata))), "\n")
+  cat("Counts are nonnegative:  ", all(as.matrix(counts) >= 0), "\n")
+  cat("Counts are whole numbers:", all(as.matrix(counts) %% 1 == 0), "\n")
+  cat("Duplicate genes:         ", sum(duplicated(rownames(counts))), "\n")
+  cat("Duplicate samples:       ", sum(duplicated(colnames(counts))), "\n")
+  # Put metadata rows in the same order as the count columns
+  metadata <- metadata[colnames(counts), , drop = FALSE]
+  print(data.frame(n_missing = colSums(is.na(metadata)),
+                   n_unique = sapply(metadata, function(x) length(unique(x)))))
+}
+```
+
+## 3. Explore the Samples
+
+Change `color_by` to different metadata columns and rerun to see which fields line up with the main patterns.
+
+```{r explore}
+# You decide: a metadata column name to color the points by
+color_by <- NULL
+
+if (!is.null(counts)) {
+  log_cpm <- log2(t(t(as.matrix(counts)) / colSums(counts)) * 1e6 + 1)
+  pca <- prcomp(t(log_cpm))
+  var_pct <- round(100 * pca$sdev^2 / sum(pca$sdev^2))
+  pcs <- data.frame(PC1 = pca$x[, 1], PC2 = pca$x[, 2], sample = colnames(counts))
+  pcs$color <- if (is.null(color_by)) "all" else metadata[[color_by]]
+  ggplot(pcs, aes(PC1, PC2, color = color, label = sample)) +
+    geom_point(size = 2) +
+    geom_text(size = 2.5, vjust = -0.8, show.legend = FALSE) +
+    labs(x = paste0("PC1 (", var_pct[1], "% of variation)"),
+         y = paste0("PC2 (", var_pct[2], "% of variation)"),
+         color = color_by, title = "Samples by overall gene activity") +
+    theme_minimal()
+}
+```
+
+## 4. Choose a Comparison
+
+Use exact column names and values from the metadata. Write a short justification in your analysis plan.
+
+```{r compare}
+# You decide
+group_column <- NULL   # e.g. "column_name"
+case <- NULL           # e.g. "value_for_group_A"
+control <- NULL        # e.g. "value_for_group_B"
+covariates <- c()      # e.g. c("another_column")
+
+comp_counts <- NULL
+if (is.null(group_column) || is.null(case) || is.null(control)) {
+  message("Fill in group_column, case and control above, then rerun this chunk.")
+} else if (!is.null(counts)) {
+  used <- c(group_column, covariates)
+  comp_meta <- metadata[metadata[[group_column]] %in% c(case, control), used, drop = FALSE]
+  n_before <- nrow(comp_meta)
+  comp_meta <- comp_meta[complete.cases(comp_meta), , drop = FALSE]
+  if (nrow(comp_meta) < n_before) {
+    message(n_before - nrow(comp_meta), " sample(s) dropped for missing values. Report this.")
+  }
+  comp_meta[[group_column]] <- relevel(factor(comp_meta[[group_column]]), ref = control)
+  comp_counts <- as.matrix(counts[, rownames(comp_meta)])
+  print(table(comp_meta[[group_column]]))
+}
+```
+
+## 5. Run the Test
+
+```{r deseq, message=FALSE}
+res <- NULL
+if (!is.null(comp_counts)) {
+  design <- as.formula(paste("~", paste(c(covariates, group_column), collapse = " + ")))
+  dds <- DESeqDataSetFromMatrix(countData = comp_counts, colData = comp_meta, design = design)
+  dds <- DESeq(dds)
+  res <- as.data.frame(results(dds, contrast = c(group_column, case, control)))
+  res <- res[order(res$padj), ]
+  write.csv(res, file.path(results_dir, "de_results.csv"))
+  head(res, 10)
+}
+```
+
+## 6. Read the Results
+
+`log2FoldChange` +1 means twice as high in case. `padj` is the adjusted p-value, smaller means stronger evidence. Set your own cutoffs and note how much the number of passing genes changes.
+
+```{r results}
+# You decide
+padj_cutoff <- NULL   # e.g. a value between 0 and 1
+lfc_cutoff <- NULL    # e.g. a minimum absolute log2 fold change, or 0
+
+hits <- NULL
+if (!is.null(res)) {
+  plot_df <- res[!is.na(res$padj), ]
+  plot_df$passing <- FALSE
+  if (!is.null(padj_cutoff) && !is.null(lfc_cutoff)) {
+    plot_df$passing <- plot_df$padj < padj_cutoff & abs(plot_df$log2FoldChange) >= lfc_cutoff
+    hits <- plot_df[plot_df$passing, ]
+    cat(nrow(hits), "genes pass\n")
+    write.csv(hits, file.path(results_dir, "passing_genes.csv"))
+  } else {
+    message("Set padj_cutoff and lfc_cutoff to highlight genes.")
+  }
+  p <- ggplot(plot_df, aes(log2FoldChange, -log10(padj), color = passing)) +
+    geom_point(size = 0.8) +
+    scale_color_manual(values = c(`FALSE` = "grey75", `TRUE` = "firebrick")) +
+    labs(x = paste("log2 fold change (", case, "vs", control, ")"),
+         y = "-log10 adjusted p-value", title = "Volcano plot") +
+    theme_minimal()
+  ggsave(file.path(results_dir, "volcano.png"), p, dpi = 300, width = 7, height = 5)
+  p
+}
+```
+
+## 7. Connect Genes to Cell Types
+
+Check which passing genes are broad cell-type markers, then look up at least three genes in the [Zeisel/Admati gene browser](https://storage.googleapis.com/www_zeisellab/PE_web/pe_web_test_v1.html) and record what you see.
+
+```{r markers}
+markers <- read.csv(file.path(data_dir, "interpretation", "track01_marker_matrix.csv"))
+if (!is.null(hits)) {
+  overlap <- merge(markers, data.frame(gene_symbol = rownames(hits), hits[, c("log2FoldChange", "padj")]))
+  if (nrow(overlap) == 0) message("None of your passing genes are in the marker table.") else overlap
+}
+
+# You decide: one row per gene you looked up in the browser
+browser_lookups <- data.frame(
+  gene = character(), cell_types_expressing = character(),
+  differs_PE_vs_control = character(), notes = character()
+)
+if (nrow(browser_lookups) > 0) write.csv(browser_lookups, file.path(results_dir, "browser_lookups.csv"), row.names = FALSE)
+```
+
+## 8. Optional: Single-Cell Extension
+
+Filter the pseudobulk tables to one cell type, then rerun Sections 4 to 6 with them. Each donor counts once, and the early-onset comparison is exploratory.
+
+```{r extension}
+pb_counts <- load_table(file.path(data_dir, "extension", "pseudobulk", "track01_pseudobulk_counts.csv"))
+pb_metadata <- load_table(file.path(data_dir, "extension", "pseudobulk", "track01_pseudobulk_metadata.csv"))
+if (!is.null(pb_counts)) head(pb_metadata)
+```
+
+## Next
+
+Go to [Step 4: Submit](../4-submit.md).

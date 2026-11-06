@@ -17,5 +17,5 @@ If you need accommodations (e.g., extended time, assistive technology, alternati
 
 ## Beginner-Friendly Resources
 
-- The [cell & tissue glossary](track-1-computational-biology/cell-type-glossary.md) defines key terms.
-- Starter notebooks show how to load and check the data.
+- The [glossary](../track-01/glossary.md) defines biology and statistics terms in plain language.
+- The [analysis workflow](../track-01/3-workflow.md) and its matching notebook walk through each step.

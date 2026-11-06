@@ -1,9 +1,9 @@
 # Track 01 Starter Questions
 
-[![Participant Guide](https://img.shields.io/badge/Guide-Track_01-0fe995?style=flat-square)](README.md)
-[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-13deba?style=flat-square)](../../data/track-01/README.md)
+[![Back](https://img.shields.io/badge/Back-Track_Overview-13deba?style=flat-square)](README.md)
+[![Workflow](https://img.shields.io/badge/Next-3_Workflow-0fe995?style=flat-square)](3-workflow.md)
 
-Choose one or more questions, or adapt one to your team's interests. Each has many defensible answers. The table shows where to start, not what to find.
+Choose one question, or adapt one to your team's interests. Each has many defensible answers. The table shows where to start, not what to find. New to this? Questions 1, 2, 5 and 6 use only the core data and fit the [workflow](3-workflow.md) directly.
 
 | # | Question | Where to start |
 |---|---|---|

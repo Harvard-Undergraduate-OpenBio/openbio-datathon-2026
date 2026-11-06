@@ -1,6 +1,6 @@
 # Contributing to the OpenBio 2026 Datathon Repository
 
-Thank you for your interest in contributing. This repository serves as the participant guide for the datathon, so we welcome improvements to documentation, starter notebooks, data catalogs, and utilities.
+Thank you for your interest in contributing. This repository serves as the participant guide for the datathon, so we welcome improvements to the guides and notebooks.
 
 ## How to Contribute
 
@@ -14,10 +14,9 @@ Thank you for your interest in contributing. This repository serves as the parti
 
 ## What We Accept
 
-- Fixes to documentation typos, broken links, or unclear explanations
+- Fixes to documentation typos, broken links or unclear explanations
 - Improvements to starter notebooks (clarity, comments, efficiency)
 - New glossary entries or data catalog corrections
-- Bug fixes in `src/` utilities
 - Additional template files that benefit participants
 
 ## What We Do Not Accept
@@ -31,7 +30,6 @@ Thank you for your interest in contributing. This repository serves as the parti
 - Use clear, accessible language. Participants may be beginners.
 - Keep notebook cells well-commented and runnable top-to-bottom.
 - Follow [PEP 8](https://peps.python.org/pep-0008/) for Python code.
-- Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
 
 ## Reporting Issues
 

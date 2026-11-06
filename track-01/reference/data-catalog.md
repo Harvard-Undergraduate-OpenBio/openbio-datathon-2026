@@ -1,7 +1,7 @@
 # Track 01 Data Catalog
 
-[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-0fe995?style=flat-square)](../../data/track-01/README.md)
-[![Manifest](https://img.shields.io/badge/Data-Manifest-13deba?style=flat-square)](../../data/manifest.csv)
+[![Download Guide](https://img.shields.io/badge/Data-Data_Package-0fe995?style=flat-square)](../data/README.md)
+[![Manifest](https://img.shields.io/badge/Data-Manifest-13deba?style=flat-square)](manifest.csv)
 
 | Resource | Role | What it is | In the download? |
 |---|---|---|---|

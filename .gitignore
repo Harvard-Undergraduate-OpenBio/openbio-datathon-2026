@@ -13,7 +13,7 @@ env/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data — never commit large raw datasets
+# Data: never commit large raw datasets
 data/raw/
 *.h5ad
 *.rds
@@ -21,8 +21,10 @@ data/raw/
 *.h5
 *.loom
 *.parquet
-!data/sample_data/*.h5ad
-!data/sample_data/*.csv
+
+# Local outputs from the workflow notebook
+track-01/notebooks/results/
+track-01/data/track01_gene_sets.gmt
 
 # OS
 .DS_Store

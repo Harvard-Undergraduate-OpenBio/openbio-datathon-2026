@@ -1,12 +1,14 @@
 # Track 01 Data Preparation Plan
 
-[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-0fe995?style=flat-square)](../../data/track-01/README.md)
+[![Download Guide](https://img.shields.io/badge/Data-Data_Package-0fe995?style=flat-square)](../data/README.md)
 
 How the organizers build the Track 01 package. Participants do not need to repeat any of this.
 
 Our job is preparation, not analysis. Participants should start with usable data without being handed the answers.
 
 ## Release Contents
+
+Paths are relative to `track-01/data`.
 
 | File | Contents |
 |---|---|

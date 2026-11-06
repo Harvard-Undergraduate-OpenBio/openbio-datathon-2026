@@ -4,58 +4,54 @@
 
 [![OpenBio](https://img.shields.io/badge/OPENBIO-OPENBIOLAB.ORG-0fe995?style=flat-square)](https://www.openbiolab.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-13deba?style=flat-square)](LICENSE)
-[![Track 1](https://img.shields.io/badge/Track-Computational_Biology-0fe995?style=flat-square)](docs/track-1-computational-biology/README.md)
 
-Welcome to the Harvard Undergraduate OpenBio 2026 Datathon repository. It holds the participant guide, data package, starter notebooks and submission templates.
+Welcome to the Harvard Undergraduate OpenBio 2026 Datathon. Teams compare gene activity in placentas from pregnancies with and without preeclampsia, then ask which placental cell types might explain the differences. You do not need a biology or statistics background to take part. The guide explains each idea as it comes up.
 
-## Quick Links
+## Start Here
 
-[![Track 01 Participant Guide](https://img.shields.io/badge/Guide-Track_01-0fe995?style=flat-square)](docs/track-1-computational-biology/README.md)
-[![Download Guide](https://img.shields.io/badge/Data-Download_Guide-13deba?style=flat-square)](data/track-01/README.md)
-[![Starter Questions](https://img.shields.io/badge/Docs-Starter_Questions-0fe995?style=flat-square)](docs/track-1-computational-biology/research-questions.md)
-[![Data Catalog](https://img.shields.io/badge/Docs-Data_Catalog-13deba?style=flat-square)](docs/track-1-computational-biology/data-catalog.md)
-[![Cell & Tissue Glossary](https://img.shields.io/badge/Docs-Glossary-0fe995?style=flat-square)](docs/track-1-computational-biology/cell-type-glossary.md)
-[![Notebooks](https://img.shields.io/badge/Code-Starter_Notebooks-13deba?style=flat-square)](notebooks/track-1)
-[![Templates](https://img.shields.io/badge/Docs-Templates-0fe995?style=flat-square)](templates)
-[![Submission Rubric](https://img.shields.io/badge/Docs-Rubric-13deba?style=flat-square)](docs/submission-rubric.md)
-[![FAQ](https://img.shields.io/badge/Docs-FAQ-0fe995?style=flat-square)](docs/faq.md)
+Everything for the challenge lives in [`track-01/`](track-01). Work through these pages in order.
 
-## Track 1 - Computational Biology
+| Step | Page | What you will do | Time |
+|---|---|---|---|
+| 0 | [Track overview](track-01/README.md) | Learn what the challenge is about | 5 min |
+| 1 | [Setup](track-01/1-setup.md) | Install the software and download the data | 20 min |
+| 2 | [Understand the data](track-01/2-the-data.md) | Learn what each file contains | 15 min |
+| 3 | [Analysis workflow](track-01/3-workflow.md) | Follow seven steps from raw counts to a hypothesis | Most of the event |
+| 4 | [Submit](track-01/4-submit.md) | Package your notebook, figures and hypothesis | 1 hour |
 
-Teams study how gene activity in the placenta differs between preeclampsia and control pregnancies, then use single-cell reference data to ask which placental cell types may be involved. The core dataset is bulk RNA-seq of 30 villous-tissue samples (GSE203507), with an optional donor-level single-cell extension.
+Keep the [glossary](track-01/glossary.md) open while you work. Pick a research question from the [starter questions](track-01/starter-questions.md).
 
-Start with the [participant guide](docs/track-1-computational-biology/README.md).
-
-## Repository Structure
+## Repository Map
 
 ```
 openbio-datathon-2026/
-├── README.md
-├── LICENSE
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── CITATION.cff
-├── .gitignore
-├── docs/                         # Challenge documentation and glossaries
-│   └── track-1-computational-biology/
-├── data/                          # Manifest and prepared data package
-│   └── track-01/                  # Track 01 participant data package
-├── notebooks/                     # Starter notebooks
-│   └── track-1/
-├── src/                           # Shared Python utilities
-├── environment/                   # Conda/pip/renv lockfiles
-├── templates/                     # Submission and proposal templates
-└── submissions/                   # Team submission area
+├── track-01/              Everything for the challenge
+│   ├── README.md          Track overview (start here)
+│   ├── 1-setup.md         Install and download
+│   ├── 2-the-data.md      What the files contain
+│   ├── 3-workflow.md      Step-by-step analysis
+│   ├── 4-submit.md        What to hand in
+│   ├── starter-questions.md
+│   ├── glossary.md        Biology and statistics terms
+│   ├── data/              The data package
+│   ├── notebooks/         Guided workflow notebooks (Python and R)
+│   ├── templates/         Hypothesis card and submission forms
+│   └── reference/         Data catalog, citations, limitations
+├── submissions/           Where teams commit their final work
+├── docs/                  Event info: FAQ, rubric, schedule, support
+└── environment/           Python environment files
 ```
 
-## Important Notes
+## Event Info
 
-- **This repository does not host raw datasets.** It holds the prepared Track 01 package, documentation and starter code.
-- **Reference atlases are linked, not redistributed.** Each source keeps its own terms.
+- [FAQ](docs/faq.md)
+- [Judging rubric](docs/rubric.md)
+- [Schedule](docs/schedule.md)
+- [Support and accessibility](docs/support.md)
 
 ## License
 
-This repository's documentation and code are licensed under [MIT](LICENSE). Dataset terms are listed in the [data catalog](docs/track-1-computational-biology/data-catalog.md).
+Code and documentation are under the [MIT license](LICENSE). Each dataset keeps its own terms, listed in the [data catalog](track-01/reference/data-catalog.md).
 
 ## Contact
 

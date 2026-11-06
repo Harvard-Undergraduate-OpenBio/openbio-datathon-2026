@@ -26,4 +26,4 @@ The [Zeisel lab gene browser](https://storage.googleapis.com/www_zeisellab/PE_we
 
 ## If the Browser Is Down
 
-Use [`track01_marker_matrix.csv`](track01_marker_matrix.csv) together with the linked reference atlases in the [download guide](../README.md#4-linked-resources-not-downloaded). Overlap with a marker list alone does not show that your gene is expressed in that cell type.
+Use [`track01_marker_matrix.csv`](track01_marker_matrix.csv) together with the linked reference atlases in the [download guide](../../2-the-data.md#reference-atlases-linked-only). Overlap with a marker list alone does not show that your gene is expressed in that cell type.
