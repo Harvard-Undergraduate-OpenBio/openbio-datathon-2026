@@ -25,6 +25,7 @@ data/raw/
 # Local outputs from the workflow notebook
 track-01/notebooks/results/
 track-01/data/track01_gene_sets.gmt
+track-02/team/data_clean/
 
 # OS
 .DS_Store

@@ -1,6 +1,8 @@
 # Submissions
 
-Teams commit their final work here. See [Step 4: Submit](../track-01/4-submit.md) for what to include.
+Track 1 teams commit their final work here. See [Track 1: Submit](../track-01/4-submit.md) for what to include.
+
+Track 2 teams submit through their own private team repository instead. See [Track 2: Submit](../track-02/4-submit.md).
 
 ## Structure
 

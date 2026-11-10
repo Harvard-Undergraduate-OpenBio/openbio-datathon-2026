@@ -1,0 +1,4 @@
+dataset_id,track,role,source_title,source_url,data_format,level,record_count,license_or_data_use,notes
+CVD_KAGGLE,track_2,dataset_1,Cardiovascular Disease Dataset,https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset,csv,individual,70000,See Kaggle page,Age in days; gender 1 = women 2 = men; may be semicolon-separated
+HEART_ATTACK_KAGGLE,track_2,dataset_2,Heart Attack Risk Prediction Dataset,https://www.kaggle.com/datasets/iamsouravbanerjee/heart-attack-prediction-dataset,csv,individual_synthetic,8763,See Kaggle page,Synthetic; Blood Pressure stored as text
+GBD_WOMEN_CVD,track_2,dataset_3,Global burden of cardiovascular disease in women 1990-2019 (Tables S1 and S2),https://pmc.ncbi.nlm.nih.gov/articles/PMC12237364/,csv_or_excel,population,204 countries and territories,Publisher terms,S1 MIR by SDI and GBD region; S2 country SDI and incidence

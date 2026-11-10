@@ -1,0 +1,14 @@
+# Cleaned data are rebuilt by 01_cleaning.ipynb
+data_clean/
+
+# Raw data copies uploaded by hand (raw files belong in track-02/data/)
+*.csv
+*.xlsx
+
+# Notebook and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+
+# Credentials
+.env
+credentials*

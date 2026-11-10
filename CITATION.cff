@@ -1,7 +1,7 @@
 # CodeMETA for OpenBio 2026 Datathon
 
 title: "OpenBio 2026 Datathon"
-description: "Maternal-Fetal Cell Communication in Preeclampsia  -  participant repository with the Track 01 data package, starter notebooks and submission templates."
+description: "Participant repository for the OpenBio 2026 Datathon. Track 01 covers maternal-fetal cell communication in preeclampsia. Track 02 covers cardiovascular health in women."
 version: "0.1.0"
 doi: ""
 date-published: "2026"
@@ -17,4 +17,6 @@ keywords:
   - bulk RNA-seq
   - placenta
   - maternal-fetal interface
+  - cardiovascular disease
+  - women's health
   - datathon

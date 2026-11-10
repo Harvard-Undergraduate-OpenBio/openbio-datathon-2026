@@ -17,5 +17,5 @@ If you need accommodations (e.g., extended time, assistive technology, alternati
 
 ## Beginner-Friendly Resources
 
-- The [glossary](../track-01/glossary.md) defines biology and statistics terms in plain language.
-- The [analysis workflow](../track-01/3-workflow.md) and its matching notebook walk through each step.
+- Each track has a glossary of terms in plain language ([Track 1](../track-01/glossary.md), [Track 2](../track-02/glossary.md)).
+- Each analysis workflow walks through every step with matching notebooks ([Track 1](../track-01/3-workflow.md), [Track 2](../track-02/3-workflow.md)).
