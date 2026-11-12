@@ -156,11 +156,11 @@ You get a table with one row per gene. The columns that matter most:
 
 ### Reading fold change
 
-A **fold change** is how many times bigger one group’s average is than the other’s. Here it compares the average read count of a gene’s mRNA in the CASE samples with its average in the CONTROL samples.
+A **fold change** is how many times bigger one group’s average is than the other’s. Here it compares the average read count of a gene’s expressed mRNA (i.e. its activity) in the CASE samples with its average in the CONTROL samples.
 
 > fold change = average in CASE ÷ average in CONTROL
 
-Say you set `CASE = "yes"` and `CONTROL = "no"` for the pe_status column, so your CASE group is the preeclampsia samples and your CONTROL group is the samples without preeclampsia. If a gene averages 300 reads across the CASE group and 100 reads across the CONTROL group, the fold change is 300 ÷ 100 = 3: the gene is 3 times as active in the preeclampsia samples. If the CASE group averaged 50 reads instead, the fold change would be 50 ÷ 100 = 0.5: the gene is half as active in the preeclampsia samples.
+Say you set `CASE = "yes"` and `CONTROL = "no"` for the `pe_status` column, so your CASE group is the preeclampsia samples and your CONTROL group is the samples without preeclampsia. If a gene averages 300 reads across the CASE group and 100 reads across the CONTROL group, the fold change is 300 ÷ 100 = 3: the gene is 3 times as active in the preeclampsia samples. If the CASE group averaged 50 reads instead, the fold change would be 50 ÷ 100 = 0.5: the gene is half as active in the preeclampsia samples.
 
 DESeq2 reports this ratio on a **log2 scale**, which counts how many times you would double (or halve) to get from CONTROL to CASE. To turn it back into a plain fold change, calculate 2 to the power of the value.
 
