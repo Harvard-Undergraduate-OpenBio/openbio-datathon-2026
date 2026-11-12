@@ -46,7 +46,7 @@ Files marked Pending in the [data guide](2-the-data.md) are empty until release 
 
 ## Check the Download
 
-Each file has a fingerprint (a SHA-256 checksum) that changes if even one byte changes. From `track-01/data`, run:
+Each file has a fingerprint (a SHA-256 checksum) that you must run on your downloaded copy to ensure that no bytes were changed whilst downloading. From `track-01/data`, run:
 
 ```bash
 sha256sum -c provenance/checksums.sha256       # Linux or Windows WSL

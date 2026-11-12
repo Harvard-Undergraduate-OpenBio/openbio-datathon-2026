@@ -9,7 +9,10 @@
 
 The core data come from [GSE203507](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203507), a public study of 30 placentas collected at delivery. Researchers took a piece of villous tissue (the part of the placenta that exchanges nutrients with the mother's blood) from each one.
 
-They then used **bulk RNA sequencing**. When a gene is switched on, the cell makes copies of it called RNA. Sequencing counts those copies. "Bulk" means the whole tissue piece was measured at once, so each count is a total across every cell in the sample.
+They then used **bulk RNA sequencing**. When a gene is switched on, the cell copies 
+the gene into mRNA sequences, and sequencing allows us to measure the mRNA levels. Bulk sequencing means that a whole tissue piece was measured at once (instead of individual cells), so the data is a total across all cells in that sample. 
+
+The data contains multiple samples from multiple tissues.
 
 You get two tables that link through a shared sample ID.
 
@@ -22,7 +25,7 @@ You get two tables that link through a shared sample ID.
 | ... | ... | ... | ... |
 
 - One row per gene (tens of thousands of rows) and one column per sample (30 columns).
-- Each number is how many RNA reads came from that gene in that sample. Bigger means more active.
+- Each number is how many RNA reads came from that gene in that sample. A larger number of reads means that a gene produced more mRNA, meaning it was more active.
 - Counts are raw whole numbers. Samples were sequenced to different depths, so do not compare raw numbers between columns directly. The workflow handles this for you.
 
 ### Table 2: Metadata (`track01_metadata_vt.csv`)
