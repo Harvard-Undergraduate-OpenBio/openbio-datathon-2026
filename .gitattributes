@@ -1,0 +1,2 @@
+# Keep data package bytes identical on every platform so SHA-256 checksums verify
+track-01/data/** -text

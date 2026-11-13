@@ -3,7 +3,7 @@
 [![Back](https://img.shields.io/badge/Back-1_Setup-13deba?style=flat-square)](1-setup.md)
 [![Next](https://img.shields.io/badge/Next-3_Workflow-0fe995?style=flat-square)](3-workflow.md)
 
-> **Status:** Files marked Pending will be filled in at release. Until then they are empty placeholders.
+> **Status:** All files are available in [`data/`](data). See [how to get the data](data/README.md#how-to-get-the-data) for download links.
 
 ## The Core Dataset in One Minute
 
@@ -18,13 +18,13 @@ You get two tables that link through a shared sample ID.
 
 ### Table 1: Counts (`track01_counts_vt.csv`)
 
-|  | sample_01 | sample_02 | ... |
+|  | S01_VT | S02_VT | ... |
 |---|---|---|---|
 | **GENE_A** | 1520 | 1874 | ... |
 | **GENE_B** | 3 | 0 | ... |
 | ... | ... | ... | ... |
 
-- One row per gene (tens of thousands of rows) and one column per sample (30 columns).
+- One row per gene (26,485 rows) and one column per sample (30 columns).
 - Each number is how many RNA reads came from that gene in that sample. A larger number of reads means that a gene produced more mRNA, meaning it was more active.
 - Counts are raw whole numbers. Samples were sequenced to different depths, so do not compare raw numbers between columns directly. The workflow handles this for you.
 
@@ -32,18 +32,25 @@ You get two tables that link through a shared sample ID.
 
 One row per sample describing the pregnancy:
 
-| Field | Meaning |
+| Column | Meaning |
 |---|---|
-| group | Clinical group the study assigned to the sample |
-| PE status | Whether the pregnancy had preeclampsia |
-| FGR | Whether the fetus had growth restriction (grew less than expected) |
-| control type | For controls, which kind (for example preterm or term birth) |
-| gestational age | Weeks of pregnancy at delivery |
-| maternal age, fetal sex and other clinical fields | Described in the data dictionary |
+| `group` | Clinical group the study assigned: `EOPE` (early-onset preeclampsia), `EOPE+FGR`, `FGR`, `iPTB` (preterm birth control) or `TB` (term birth control) |
+| `pe_status` | Whether the pregnancy had preeclampsia (`PE` or `no_PE`) |
+| `fgr_status` | Whether the fetus had growth restriction, meaning it grew less than expected (`FGR` or `no_FGR`) |
+| `control_type` | For controls, which kind (`preterm_birth` or `term_birth`) |
+| `ga_delivery_weeks` | Weeks of pregnancy at delivery, as a decimal |
+| `maternal_age_years`, `fetal_sex` | Mother's age and the baby's sex |
+| `birthweight_interval_g` | Birthweight in 100 gram bins |
+| `sbp_max_mmhg`, `dbp_max_mmhg` | Highest blood pressure recorded before delivery |
+| `qc_flags` | Notes from the organizers' plausibility audit. `none` means nothing was flagged |
 
-Exact column names, units and allowed values are in [`data/track01_data_dictionary.md`](data/track01_data_dictionary.md). Read it before you choose a comparison.
+There are 8 `EOPE`, 7 `EOPE+FGR`, 5 `FGR`, 5 `iPTB` and 5 `TB` samples.
 
-Missing values are written `NA` and never filled in. Values that look implausible are flagged in the dictionary, not corrected.
+Every column, with units and allowed values, is in [`data/track01_data_dictionary.md`](data/track01_data_dictionary.md). Read it before you choose a comparison.
+
+Missing values are written `NA` and never filled in. The five term controls have no birthweight or blood pressure. Values that look implausible are flagged in `qc_flags` and in the dictionary, not corrected.
+
+Gene names in the count table are the symbols the original authors used. [`track01_gene_annotation.csv`](data/track01_gene_annotation.csv) maps each one to a current HGNC ID where a match exists.
 
 ### One Important Caution
 
@@ -59,10 +66,18 @@ The [marker table](data/interpretation/track01_marker_matrix.csv) is the offline
 
 For teams that want more detail. The Admati/Skarbianskis study measured 86,752 individual placental cells from 26 donors and labeled each cell's type. We added up the counts for each donor and cell type (called **pseudobulk**), so you get one smaller table with a column per donor and cell type instead of 86,752 columns.
 
-- `extension/pseudobulk/track01_pseudobulk_counts.csv`: counts by donor and cell type
-- `extension/pseudobulk/track01_pseudobulk_metadata.csv`: one row per donor with clinical group and delivery information
+- [`track01_pseudobulk_counts.csv`](data/extension/pseudobulk/track01_pseudobulk_counts.csv): 33,660 genes by 362 columns. Each column is one donor and one cell class, named like `PE_early_1__syncytiotrophoblast`
+- [`track01_pseudobulk_metadata.csv`](data/extension/pseudobulk/track01_pseudobulk_metadata.csv): one row per column with the donor, cell class, number of cells and clinical fields
+- [`track01_pseudobulk_donors.csv`](data/extension/pseudobulk/track01_pseudobulk_donors.csv): one row per donor with clinical group and delivery information
+- [`track01_cell_class_map.csv`](data/extension/pseudobulk/track01_cell_class_map.csv): which published cell types were combined into each of the 14 broad classes
+
+To study one cell type, keep only the columns for that `cell_class`. Some columns come from very few cells, so check `n_cells` first.
 
 Each donor counts once, even if they were sequenced more than once. The early-onset comparison in this dataset has only three control donors against ten preeclampsia donors, so treat it as exploratory.
+
+## The Decidua Extension (optional)
+
+The same bulk study also sequenced the decidua basalis, the maternal tissue the placenta attaches to, for 27 of the 30 pregnancies. The files are in [`data/extension/decidua`](data/extension/decidua) and use the same layout as the core tables. A villous and a decidua sample with the same `donor_id` come from one pregnancy, so they are not independent.
 
 ## Reference Atlases (linked only)
 

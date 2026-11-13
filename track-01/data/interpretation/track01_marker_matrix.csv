@@ -4,9 +4,9 @@ villous_cytotrophoblast,fetal,TP63
 villous_cytotrophoblast,fetal,CDH1
 syncytiotrophoblast,fetal,CGB
 syncytiotrophoblast,fetal,CGA
-syncytiotrophoblast,fetal,ERVW1
+syncytiotrophoblast,fetal,ERVW-1
 syncytiotrophoblast,fetal,PSG1
-extravillous_trophoblast,fetal,HLAG
+extravillous_trophoblast,fetal,HLA-G
 extravillous_trophoblast,fetal,ITGA1
 extravillous_trophoblast,fetal,MMP2
 decidual_nk_cell,maternal,NCAM1

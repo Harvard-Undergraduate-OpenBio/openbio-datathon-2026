@@ -40,9 +40,9 @@ No conda? Run `pip install -r environment/requirements.txt` inside a virtual env
 
 ## Get the Data
 
-The data package is in [`track-01/data`](data), so cloning the repository already downloads it. At release a versioned ZIP will also be attached to the repository's Releases page.
+The data package is in [`track-01/data`](data), so cloning the repository already downloads it. On Colab the first notebook cell does this for you.
 
-Files marked Pending in the [data guide](2-the-data.md) are empty until release day.
+Not using git? [Download the repository as a ZIP](https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026/archive/refs/heads/main.zip) and unzip it. Links to each individual file are in the [data package README](data/README.md#how-to-get-the-data).
 
 ## Check the Download
 

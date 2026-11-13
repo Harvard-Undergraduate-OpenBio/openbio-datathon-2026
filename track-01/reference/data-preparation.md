@@ -33,7 +33,7 @@ Include SHA-256 checksums, a source manifest with licenses and a transformation 
 
 ## Admati Single-Cell Extension
 
-1. Download the processed expression dataset from Figshare, not the [raw Cell Ranger archive](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471). The raw archive is organizer-side only; participants never touch it.
+1. Download the [processed expression dataset](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_dataset_Admati_Skarbianskis_et_al_/23264102) from Figshare, not the [raw Cell Ranger archive](https://figshare.com/articles/dataset/Placenta_PE_single_cell_RNAseq_cellranger_files_raw_data_Admati_Skarbianskis_et_al_/23628471). The raw archive is organizer-side only; participants never touch it.
 2. The processed file contains 86,752 cells from 26 biological donors with cell-type labels, donor IDs, clinical group and delivery information. Some donors have multiple libraries; these are technical replicates, not independent patients.
 3. Aggregate counts by donor and cell class. The donor is the unit of replication.
 4. Release the donor-by-cell-type pseudobulk counts and donor metadata as the extension. Label the early-onset comparison exploratory, since it has three control donors against ten PE donors.
