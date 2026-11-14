@@ -10,7 +10,9 @@ Both tracks hand in the same four deliverables. This page covers what each one n
 
 ## Write Your Hypothesis
 
-A hypothesis is a testable explanation for what you found. Fill in the [hypothesis card](templates/hypothesis-card.md). A strong one:
+A hypothesis is a testable explanation for what you found. Fill in the [hypothesis card](templates/hypothesis-card.md). Cite articles you referenced whenever relevant.
+
+A strong hypothesis:
 
 - Starts from a specific result ("these genes are higher in cases and the browser places most of them in cell type Y")
 - Proposes a mechanism and names at least one other explanation, such as gestational age or cell mix
