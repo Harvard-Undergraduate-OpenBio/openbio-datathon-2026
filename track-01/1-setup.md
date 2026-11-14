@@ -60,4 +60,4 @@ Every line should end in `OK`. If not, download again or ask an organizer. The w
 - The workflow notebook opens.
 - The first two code cells run without errors and print the size of each data file.
 
-Stuck? Ask a mentor or email exec@harvardopenbio.org. Setup problems are the most common issue and quick to fix.
+Stuck? Ask on Slack. Setup problems are a common issue and may be quick to fix.
