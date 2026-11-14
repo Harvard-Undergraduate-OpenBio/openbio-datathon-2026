@@ -49,7 +49,7 @@ openbio-datathon-2026/
 │   ├── data/              The three datasets
 │   ├── team/              Team repository layout: notebooks, figures, docs
 │   └── reference/         Data catalog, citations, responsible use
-├── submissions/           Where Track 1 teams commit their final work
+├── submissions/           Where teams commit their final work
 ├── docs/                  Event info: FAQ, rubric, article guide, schedule, support
 └── environment/           Python environment files
 ```
