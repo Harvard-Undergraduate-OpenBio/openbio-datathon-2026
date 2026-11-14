@@ -5,22 +5,22 @@
 [![3 Workflow](https://img.shields.io/badge/3-Workflow-0fe995?style=flat-square)](3-workflow.md)
 [![4 Submit](https://img.shields.io/badge/4-Submit-13deba?style=flat-square)](4-submit.md)
 
-## The Challenge in Plain Terms
+## The Challenge
 
-Cardiovascular disease (CVD), meaning disease of the heart and blood vessels, is a leading cause of death for women worldwide. Yet heart disease in women is often under-recognized and under-studied. Symptoms can look different from the "classic" male pattern and women have been under-represented in heart trials. Risk is also shaped by circumstances such as pregnancy, menopause, income and access to care.
+Cardiovascular disease (CVD), or disease of the heart and blood vessels, is a leading cause of death for women worldwide. Yet heart disease in women is often under-recognized and under-studied. Symptoms can look different from the "classic" male pattern and women have been under-represented in heart trials. Risk is also shaped by circumstances such as pregnancy, menopause, income and access to care.
 
 This track gives you three datasets that look at the same problem at different scales, from single patients up to whole countries. The central question:
 
 > What does the data tell us about who is at risk of cardiovascular disease, how that risk differs for women and how individual-level risk factors connect to the global, unequal burden of disease in women?
 
-You do not need to answer all of it. Your team will:
+It is not required to answer all aspects of the question. Your team will:
 
 1. Pick a focused angle from the [starter questions](starter-questions.md).
 2. Clean the data responsibly and log every decision.
-3. Explore the data and build a model you can defend.
+3. Explore the data and build a model that you can defend.
 4. Explain what you found so someone outside your field could understand it.
 
-Judges reward honest, careful work more than dramatic results.
+Judges will prioritize honest and careful work (not just dramatic results).
 
 ## What You Get
 
