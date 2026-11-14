@@ -1,6 +1,6 @@
 # Presentation Outline
 
-Five minutes at most. Every team member appears or speaks at least once.
+Five minutes at most. Every team member appears or speaks at least once. Upload the recording to YouTube as an unlisted video.
 
 ## Introduction (0:00 to 0:45)
 

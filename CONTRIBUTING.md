@@ -40,4 +40,4 @@ Open a GitHub Issue with a clear title and description. Include:
 
 ## Questions
 
-Contact exec@harvardopenbio.org with any questions about contributing.
+Contact openbiolaboratory@gmail.com with any questions about contributing.

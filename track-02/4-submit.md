@@ -2,25 +2,32 @@
 
 [![Back](https://img.shields.io/badge/Back-3_Workflow-13deba?style=flat-square)](3-workflow.md)
 [![Rubric](https://img.shields.io/badge/Docs-Judging_Rubric-0fe995?style=flat-square)](../docs/rubric.md)
+[![How to Submit](https://img.shields.io/badge/Docs-How_to_Submit-13deba?style=flat-square)](../submissions/README.md)
 
-## The Four Deliverables
+Both tracks hand in the same four deliverables. This page covers what each one needs for Track 2.
+
+**Deadline: Sunday, November 15 at 6:00 PM EST.**
+
+## What to Hand In
 
 | # | Deliverable | Where it lives |
 |---|---|---|
-| 1 | Reproducible code in your team GitHub repository, with a README, clear markdown explanations and a cleaning log | `track-02/team/` |
-| 2 | A recorded presentation of five minutes or less | Link in your team README |
-| 3 | A written science communication article about your work, following the [HUDP article guide](../docs/article-guide.md) | `track-02/team/docs/article.md` |
-| 4 | One headline visual showing your single most important finding to a non-specialist, used in both the video and the article | `track-02/team/figures/headline.png` |
+| 1 | Reproducible code that runs top to bottom, with a README | `README.md` and `notebooks/` |
+| 2 | A recorded presentation of five minutes or less | Unlisted YouTube video, linked in your README |
+| 3 | A written science communication article about your work, following the [HUDP article guide](../docs/article-guide.md), with at least four graphs | `docs/article.md` and `figures/` |
+| 4 | One headline visual showing your single most important finding to a non-specialist, used in both the video and the article | `figures/headline.png` |
+
+The paths are inside [`track-02/team/`](team), your submission folder. Track 2 also asks for one working document: the cleaning log that the cleaning notebook writes to `docs/cleaning_log.md`. Your notebooks need clear markdown explanations.
 
 Every deliverable must include a short statement that your work is not medical advice or a diagnostic tool.
 
-## 1. Code: Your Team Repository
+## 1. Code: Your Submission Folder
 
 Judges will rerun your notebooks top to bottom from the provided files. Your [`team/`](team) folder already has the layout they expect:
 
 | Item | Purpose |
 |---|---|
-| `README.md` | Team name and members, research question, how to run the code and a list of files |
+| `README.md` | Team name and members, research question, video link, how to run the code and a list of files |
 | `notebooks/` | Analysis notebooks in the order they run (`01_cleaning`, `02_analysis`) |
 | `src/` (optional) | Reusable functions, such as cleaning helpers |
 | `figures/` | Exported graphs, including your headline visual |
@@ -45,6 +52,8 @@ One recording, five minutes at most. Every team member must appear or speak at l
 | Methodology | 0:45 to 1:45 | Cleaning decisions, variables you used or created and how you encoded them, your method and why, how you checked your work |
 | Results | 1:45 to 3:45 | Graphs, including a regression graph where it fits. Sample size, key summary statistics, effect sizes with confidence intervals and model metrics |
 | Discussion | 3:45 to 5:00 | What your findings mean for women's cardiovascular health, your limitations and what you would improve with more time or resources |
+
+**Upload:** put the recording on YouTube as an unlisted video and paste the link into your [team README](team/README.md). The [upload steps](../submissions/README.md#upload-your-video) take a few minutes.
 
 **Slide tips:** put names, dataset sources and the repository link on a final slide or in the video description. Check the audio, and make sure graphs are readable at normal video resolution.
 
@@ -78,4 +87,13 @@ See [workflow step 7](3-workflow.md#7-make-a-headline-visual). The same image go
 
 ## How to Submit
 
-Share your private team repository with the organizers and submit your video link. Exact submission steps and the deadline will be announced.
+Submit before **Sunday, November 15 at 6:00 PM EST**, in one of two ways:
+
+- **Devpost:** add your team repository link and your video link to a project on [Devpost](https://openbio-datathon.devpost.com/). Judges need to be able to open the repository.
+- **Pull request:** copy your `track-02/team/` folder to `submissions/your-team-name/` in a fork of this repository and open a pull request.
+
+The [submission instructions](../submissions/README.md#how-to-submit) walk through both.
+
+## How You Are Judged
+
+See the [rubric](../docs/rubric.md). Honest, careful work scores better than dramatic results.

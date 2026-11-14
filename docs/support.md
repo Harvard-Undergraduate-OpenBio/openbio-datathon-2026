@@ -7,7 +7,7 @@ The OpenBio 2026 Datathon welcomes participants of all skill levels. Whether you
 ## Support Channels
 
 - **Mentorship:** Mentors will be available during the datathon to answer questions and provide guidance.
-- **Slack:** A communication channel for real-time questions and team coordination.
+- **Slack:** [Join the datathon Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A) for real-time questions and team coordination. Ask here first during the event.
 - **Email:** openbiolaboratory@gmail.com for questions before or after the event.
 
 ## Accommodations

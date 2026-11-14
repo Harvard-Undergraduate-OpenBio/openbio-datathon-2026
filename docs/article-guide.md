@@ -1,7 +1,7 @@
 # Article Guide
 
-[![Track 2 Submit](https://img.shields.io/badge/Track_2-4_Submit-0fe995?style=flat-square)](../track-02/4-submit.md)
-[![Track 1 Submit](https://img.shields.io/badge/Track_1-4_Submit-13deba?style=flat-square)](../track-01/4-submit.md)
+[![Track 1 Submit](https://img.shields.io/badge/Track_1-4_Submit-0fe995?style=flat-square)](../track-01/4-submit.md)
+[![Track 2 Submit](https://img.shields.io/badge/Track_2-4_Submit-13deba?style=flat-square)](../track-02/4-submit.md)
 
 How to write a data article that a general reader can follow and trust.
 
@@ -11,8 +11,8 @@ How to write a data article that a general reader can follow and trust.
 
 | Track | How to use this guide |
 |---|---|
+| Track 1 | Required. Your [science communication article](../track-01/4-submit.md#3-science-communication-article) follows this guide |
 | Track 2 | Required. Your [science communication article](../track-02/4-submit.md#3-science-communication-article) follows this guide |
-| Track 1 | Optional. The writing and graph advice also helps with your [final write-up and figures](../track-01/4-submit.md). The outline and the four-graph minimum do not apply |
 
 ## What the Article Is For
 

@@ -252,4 +252,4 @@ Want to know whether a specific cell type changes? The [pseudobulk files](2-the-
 
 ## When You Are Done
 
-You should have a filled-in analysis plan, a results table and at least two figures. Move on to [Step 4: Submit](4-submit.md) to turn them into a hypothesis.
+You should have a filled-in analysis plan, a results table and at least two figures. Move on to [Step 4: Submit](4-submit.md) to turn them into a hypothesis. Your article needs at least four graphs in total ([article guide](../docs/article-guide.md#graphs)), and Step 4 shows where the other two can come from.

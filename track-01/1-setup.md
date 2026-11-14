@@ -5,6 +5,8 @@
 
 By the end of this page you will have the data on your computer and a notebook that opens without errors. Pick one of the two options below. If you have never set up Python before, we recommend that you use Option A.
 
+> **New to coding?** Setup takes patience, and it is often the slowest part of the datathon. Go one step at a time. An error message or two is normal, so ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A) as soon as you are stuck.
+
 ## Option A: Google Colab (no installation)
 
 1. Open [Google Colab](https://colab.research.google.com) and sign in with a Google account.
@@ -44,20 +46,22 @@ The data package is in [`track-01/data`](data), so cloning the repository alread
 
 Not using git? [Download the repository as a ZIP](https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026/archive/refs/heads/main.zip) and unzip it. Links to each individual file are in the [data package README](data/README.md#how-to-get-the-data).
 
-## Check the Download
+## Optional: Check the Download
 
-Each file has a fingerprint (a SHA-256 checksum) that you must run on your downloaded copy to ensure that no bytes were changed whilst downloading. From `track-01/data`, run:
+Skip this section on Colab. It is for teams that downloaded the data to their own computer (Option B or the ZIP) and want to confirm that every file arrived complete.
+
+A download can be cut off or damaged without any warning, and a damaged data file causes confusing errors later in the notebook. To rule that out, the data package lists a fingerprint for each file, called a SHA-256 checksum, in [`provenance/checksums.sha256`](data/provenance/checksums.sha256). The command below recomputes the fingerprint of each file on your computer and compares it with that list. Open a terminal in `track-01/data` and run the line for your system:
 
 ```bash
 sha256sum -c provenance/checksums.sha256       # Linux or Windows WSL
 shasum -a 256 -c provenance/checksums.sha256   # macOS
 ```
 
-Every line should end in `OK`. If not, download again or ask an organizer. The workflow notebook also checks the files for you, so you can skip this step on Colab.
+Every line should end in `OK`, which means your copy matches the released files exactly. If a line says `FAILED`, download the repository again or ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A).
 
 ## You Are Ready When
 
 - The workflow notebook opens.
 - The first two code cells run without errors and print the size of each data file.
 
-Stuck? Ask on Slack. Setup problems are a common issue and may be quick to fix.
+Stuck? Ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A). Setup problems are a common issue and may be quick to fix.

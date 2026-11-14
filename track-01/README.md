@@ -59,5 +59,5 @@ The [analysis workflow](3-workflow.md) walks through each box, and the [workflow
 | [glossary.md](glossary.md) | Biology and statistics terms |
 | [data/](data) | The data package |
 | [notebooks/](notebooks) | Guided workflow in Python and R |
-| [templates/](templates) | Analysis plan, hypothesis card and submission forms |
+| [templates/](templates) | Templates for your submission folder: README, article, analysis plan and hypothesis card |
 | [reference/](reference) | Data catalog, citations, limitations and how the data were prepared |

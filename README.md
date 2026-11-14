@@ -39,7 +39,7 @@ openbio-datathon-2026/
 │   ├── glossary.md
 │   ├── data/              The data package
 │   ├── notebooks/         Guided workflow notebooks (Python and R)
-│   ├── templates/         Hypothesis card and submission forms
+│   ├── templates/         Templates for your submission folder
 │   └── reference/         Data catalog, citations, limitations
 ├── track-02/              Cardiovascular health in women
 │   ├── README.md          Track overview (start here)
@@ -49,7 +49,7 @@ openbio-datathon-2026/
 │   ├── data/              The three datasets
 │   ├── team/              Team repository layout: notebooks, figures, docs
 │   └── reference/         Data catalog, citations, responsible use
-├── submissions/           Where teams commit their final work
+├── submissions/           How to submit, and where teams commit their final work
 ├── docs/                  Event info: FAQ, rubric, article guide, schedule, support
 └── environment/           Python environment files
 ```
@@ -57,6 +57,7 @@ openbio-datathon-2026/
 ## Event Info
 
 - [FAQ](docs/faq.md)
+- [How to submit](submissions/README.md), due Sunday, November 15 at 6:00 PM EST
 - [Judging rubric](docs/rubric.md)
 - [Article guide](docs/article-guide.md), from the Harvard Undergraduate Data Project (HUDP)
 - [Schedule](docs/schedule.md)
@@ -68,5 +69,6 @@ Code and documentation are under the [MIT license](LICENSE). Each dataset keeps 
 
 ## Contact
 
-[![Email](https://img.shields.io/badge/Email-exec@harvardopenbio.org-0fe995?style=flat-square)](mailto:exec@harvardopenbio.org)
-[![Website](https://img.shields.io/badge/Web-openbiolab.org-13deba?style=flat-square)](https://www.openbiolab.org/)
+[![Slack](https://img.shields.io/badge/Slack-Join_the_Datathon_Slack-0fe995?style=flat-square)](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A)
+[![Email](https://img.shields.io/badge/Email-openbiolaboratory@gmail.com-13deba?style=flat-square)](mailto:openbiolaboratory@gmail.com)
+[![Website](https://img.shields.io/badge/Web-openbiolab.org-0fe995?style=flat-square)](https://www.openbiolab.org/)

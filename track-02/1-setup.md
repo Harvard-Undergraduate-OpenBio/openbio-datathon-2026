@@ -5,6 +5,8 @@
 
 By the end of this page your team will have a shared GitHub repository and a notebook that loads the data. Track 2 uses Python. We recommend Google Colab so everyone works in the same environment.
 
+> **New to coding?** Setup takes patience, and it is often the slowest part of the datathon. Go one step at a time. An error message or two is normal, so ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A) as soon as you are stuck.
+
 ## Part A: Create Your Team Repository
 
 Each team keeps its code in its own small GitHub repository, copied from this one. Everyone gets the same folder structure, teammates can work without overwriting each other and judges can rerun your analysis.
@@ -100,4 +102,4 @@ df1 = pd.read_csv('/content/drive/MyDrive/datathon/cardiovascular_dataset_OpenBi
 - Every teammate can open the team repository.
 - The setup cell of `01_cleaning.ipynb` runs and the Dataset 1 cell prints `Dataset 1: 70,000 rows, 13 columns`.
 
-Stuck? Ask a mentor or email exec@harvardopenbio.org.
+Stuck? Ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A). Setup problems are a common issue and may be quick to fix.

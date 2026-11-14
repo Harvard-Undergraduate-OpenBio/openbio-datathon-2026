@@ -6,7 +6,10 @@
 The datathon is open to undergraduate and graduate students at Harvard and affiliated institutions. Teams of three is ideal. Teams of two and four are acceptable.
 
 **Do I need prior bioinformatics experience?**
-No. Each track guide ([Track 1](../track-01/README.md), [Track 2](../track-02/README.md)) explains the biology and statistics as you go, and the notebooks do the coding mechanics. Some Python experience helps.
+No. Each track guide ([Track 1](../track-01/README.md), [Track 2](../track-02/README.md)) explains the biology and statistics as you go, and the notebooks do the coding mechanics. Some Python experience helps. If you are new to coding, expect setup to take patience. Start early and ask on [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A) when you get stuck.
+
+**Where do I ask for help?**
+On [Slack](https://join.slack.com/t/openbiodatathon/shared_invite/zt-4fwud5ffn-9CAX0OqyjtwbE0Hlx5QV1A). Mentors and organizers answer there during the event. For anything before or after the event, email openbiolaboratory@gmail.com.
 
 **What should I bring?**
 A laptop. Google Colab works in the browser with no installation. See Setup for [Track 1](../track-01/1-setup.md) or [Track 2](../track-02/1-setup.md).
@@ -48,8 +51,13 @@ Logistic or linear regression covers most questions, and the [workflow](../track
 ## Submissions
 
 **What format should my submission be?**
-Track 1: a reproducible notebook or script, two to four figures, a brief written interpretation and a completed hypothesis card. See [Track 1: Submit](../track-01/4-submit.md).
-Track 2: a team repository, a recorded presentation of five minutes or less, a science communication article that follows the [article guide](article-guide.md) and one headline visual. See [Track 2: Submit](../track-02/4-submit.md).
+The format is the same for both tracks: reproducible code with a README, a recorded presentation of five minutes or less, a science communication article that follows the [article guide](article-guide.md) and one headline visual. The article needs at least four graphs. Each track adds its own working documents: an analysis plan and hypothesis card for Track 1, a cleaning log for Track 2. See [Track 1: Submit](../track-01/4-submit.md) or [Track 2: Submit](../track-02/4-submit.md).
+
+**How and when do we submit?**
+Before Sunday, November 15 at 6:00 PM EST, either through [Devpost](https://openbio-datathon.devpost.com/) or with a pull request to the `submissions/` folder. See [How to Submit](../submissions/README.md).
+
+**Where do we put the video?**
+Upload it to YouTube as an unlisted video and paste the link into your README. Nobody has to store or send the file. See the [upload steps](../submissions/README.md#upload-your-video).
 
 **How are submissions judged?**
-See the [rubric](rubric.md). Track 2 judging criteria will be announced.
+See the [rubric](rubric.md). Each track has its own criteria.

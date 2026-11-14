@@ -62,7 +62,7 @@ Every submission must respect these. The [responsible use page](reference/limita
 | [1-setup.md](1-setup.md) | Open Colab, load the data and set up your team repository |
 | [2-the-data.md](2-the-data.md) | Plain-language guide to all three datasets |
 | [3-workflow.md](3-workflow.md) | Step-by-step analysis walkthrough |
-| [4-submit.md](4-submit.md) | The four deliverables and how to hand them in |
+| [4-submit.md](4-submit.md) | What to hand in and how |
 | [starter-questions.md](starter-questions.md) | Focused angles to choose from |
 | [glossary.md](glossary.md) | Health and statistics terms |
 | [data/](data) | The data files |
