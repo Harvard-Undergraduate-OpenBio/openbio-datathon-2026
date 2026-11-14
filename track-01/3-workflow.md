@@ -37,9 +37,9 @@ If a check fails, note it in your plan and tell an organizer. Do not edit the da
 Before testing anything, look at how the samples relate to each other. 
 This tells you what the biggest sources of difference in the data are, and whether preeclampsia is one of them.
 
-### What a PCA plot is
+### What a Principal Component Analysis (PCA) plot is
 
-Each sample has a value for tens of thousands of genes, too many to plot. **PCA (principal component analysis)** finds the directions in which samples differ the most and summarizes each sample as a few numbers along those directions.
+Each sample has a value for tens of thousands of genes, too many to plot. **PCA** finds the directions in which samples differ the most and summarizes each sample as a few numbers along those directions.
 
 - **PC1** (the x-axis) is the single direction with the most variation between samples. **PC2** (the y-axis) is the next most, independent of PC1.
 - The percentage in each axis label is how much of the total variation that axis captures. A PC1 of 35% means that one direction accounts for about a third of all the differences between samples.
