@@ -2,8 +2,6 @@
 
 OpenBio 2026 Datathon, Track 1: Maternal-Fetal Cell Communication in Preeclampsia
 
-> This project is a student data analysis. It is not medical advice, a diagnostic tool or clinical guidance.
-
 > Copy this file into your submission folder and rename it `README.md`. Delete this note and every bracketed prompt before you submit.
 
 ## Team
