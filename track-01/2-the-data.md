@@ -48,17 +48,17 @@ There are 8 `EOPE`, 7 `EOPE+FGR`, 5 `FGR`, 5 `iPTB` and 5 `TB` samples.
 
 Every column, with units and allowed values, is in [`data/track01_data_dictionary.md`](data/track01_data_dictionary.md). Read it before you choose a comparison.
 
-Missing values are written `NA` and never filled in. The five term controls have no birthweight or blood pressure. Values that look implausible are flagged in `qc_flags` and in the dictionary, not corrected.
+Missing values are written `NA`. The five term controls have no birthweight or blood pressure. Values that look implausible are flagged in `qc_flags` and in the dictionary, not corrected.
 
 Gene names in the count table are the symbols the original authors used. [`track01_gene_annotation.csv`](data/track01_gene_annotation.csv) maps each one to a current HGNC ID where a match exists.
 
 ### One Important Caution
 
-Preeclampsia often forces early delivery. So preeclampsia samples may also be earlier in pregnancy than many controls. A gene can differ because of preeclampsia or because of gestational age, and often you cannot tell which without checking. Keep this in mind from the start.
+Preeclampsia often forces early delivery. So preeclampsia samples may also be earlier in pregnancy than many controls. A gene can differ because of preeclampsia or because of gestational age, and often you cannot tell which without checking. Keep this in mind.
 
 ## The Gene Browser (required)
 
-The [Zeisel/Admati gene browser](https://storage.googleapis.com/www_zeisellab/PE_web/pe_web_test_v1.html) is a website. Type a gene name and it shows which placental cell types use that gene. Bulk data cannot tell you which cells a signal comes from, so this is how you connect your results to cell types. Every team looks up at least three genes. See the [browser guide](data/interpretation/zeisel_browser_guide.md).
+The [Zeisel/Admati gene browser](https://storage.googleapis.com/www_zeisellab/PE_web/pe_web_test_v1.html) is a website. Type a gene name and it shows which placental cell types use that gene. Bulk data cannot tell you which cells a signal comes from, so this is how you connect your results to cell types. Every team should look up at least three genes. See the [browser guide](data/interpretation/zeisel_browser_guide.md).
 
 The [marker table](data/interpretation/track01_marker_matrix.csv) is the offline backup. It lists genes known to mark broad placental cell types.
 
@@ -81,7 +81,7 @@ The same bulk study also sequenced the decidua basalis, the maternal tissue the 
 
 ## Reference Atlases (linked only)
 
-Maps of healthy placenta at earlier stages of pregnancy. Use them for context, never as control groups.
+Maps of healthy placenta at earlier stages of pregnancy. You can use them for context.
 
 | Atlas | What it shows | Link |
 |---|---|---|
