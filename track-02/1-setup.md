@@ -3,7 +3,7 @@
 [![Back](https://img.shields.io/badge/Back-Track_Overview-13deba?style=flat-square)](README.md)
 [![Next](https://img.shields.io/badge/Next-2_The_Data-0fe995?style=flat-square)](2-the-data.md)
 
-By the end of this page your team will have a shared GitHub repository and a notebook that loads the data. Track 2 uses Python. We recommend Google Colab so everyone works in the same environment. The instructional video walks through these steps (link to be added).
+By the end of this page your team will have a shared GitHub repository and a notebook that loads the data. Track 2 uses Python. We recommend Google Colab so everyone works in the same environment.
 
 ## Part A: Create Your Team Repository
 
