@@ -11,7 +11,7 @@ By the end of this page you will have the data on your computer and a notebook t
 2. Choose **File > Open notebook > GitHub**, paste `Harvard-Undergraduate-OpenBio/openbio-datathon-2026` and open `track-01/notebooks/track01_workflow.ipynb`.
 3. Run the first code cell. On Colab it downloads the repository and installs the one extra package the workflow needs.
 
-Colab resets when you close it. Download any results or figures you want to keep.
+NOTE: Colab resets when you close it. Download any results or figures you want to keep.
 
 ## Option B: Your Own Computer
 
