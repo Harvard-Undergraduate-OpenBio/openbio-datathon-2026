@@ -6,14 +6,13 @@ The OpenBio 2026 Datathon welcomes participants of all skill levels. Whether you
 
 ## Support Channels
 
-- **Mentorship:** Experienced mentors will be available during the datathon to answer questions and provide guidance.
-- **Office hours:** Scheduled help sessions for environment setup, data exploration and analysis.
-- **Slack/Discord:** A communication channel for real-time questions and team coordination.
-- **Email:** exec@harvardopenbio.org for questions before or after the event.
+- **Mentorship:** Mentors will be available during the datathon to answer questions and provide guidance.
+- **Slack:** A communication channel for real-time questions and team coordination.
+- **Email:** openbiolaboratory@gmail.com for questions before or after the event.
 
 ## Accommodations
 
-If you need accommodations (e.g., extended time, assistive technology, alternative formats), contact exec@harvardopenbio.org before the event start date.
+If you need accommodations (e.g., extended time, assistive technology, alternative formats), contact openbiolaboratory@gmail.com as soon as possible.
 
 ## Beginner-Friendly Resources
 
