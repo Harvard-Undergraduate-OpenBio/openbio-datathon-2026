@@ -3,7 +3,7 @@
 [![Back](https://img.shields.io/badge/Back-Track_Overview-13deba?style=flat-square)](README.md)
 [![Next](https://img.shields.io/badge/Next-2_The_Data-0fe995?style=flat-square)](2-the-data.md)
 
-By the end of this page you will have the data on your computer and a notebook that opens without errors. Pick one of the two options below. If you have never set up Python before, use Option A.
+By the end of this page you will have the data on your computer and a notebook that opens without errors. Pick one of the two options below. If you have never set up Python before, we recommend that you use Option A.
 
 ## Option A: Google Colab (no installation)
 
@@ -28,14 +28,14 @@ NOTE: Colab resets when you close it. Download any results or figures you want t
    jupyter lab
    ```
 
-3. In Jupyter, open `track-01/notebooks/track01_workflow.ipynb`.
+3. In Jupyter, open `track-01/notebooks/track01_workflow.ipynb`. You can open the Jupyter Notebook file with [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/), in your terminal, [VS Code](https://code.visualstudio.com/Download), etc. 
 
 No conda? Run `pip install -r environment/requirements.txt` inside a virtual environment instead.
 
 ### R
 
 1. Install [R](https://cran.r-project.org) and [RStudio](https://posit.co/download/rstudio-desktop/).
-2. Clone the repository as above, then in R run `source("environment/install_r_packages.R")`.
+2. [Clone the repository](https://oxford-ihtm.io/ihtm-handbook/clone-repository-rstudio.html) as above, then in R run `source("environment/install_r_packages.R")`.
 3. Open `track-01/notebooks/track01_workflow.Rmd` in RStudio.
 
 ## Get the Data
