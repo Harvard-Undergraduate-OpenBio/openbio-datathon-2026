@@ -46,5 +46,3 @@ Figure 1. [Caption: what the graph shows and the one thing to notice.]
 [Anyone who supported your project.]
 
 ---
-
-This article describes a student data analysis. It is not medical advice, a diagnostic tool or clinical guidance.
