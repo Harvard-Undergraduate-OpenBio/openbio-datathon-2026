@@ -5,7 +5,7 @@
 [![3 Workflow](https://img.shields.io/badge/3-Workflow-0fe995?style=flat-square)](3-workflow.md)
 [![4 Submit](https://img.shields.io/badge/4-Submit-13deba?style=flat-square)](4-submit.md)
 
-## The Challenge in Plain Terms
+## The Challenge
 
 Preeclampsia is a pregnancy complication that causes dangerously high blood pressure in the mother. It is thought to begin with problems in the placenta, the organ that connects mother and fetus.
 
@@ -16,7 +16,7 @@ Every cell carries the same genes, but each cell type switches different genes o
 3. Use reference data to ask which placental cell types those genes belong to.
 4. Propose a testable explanation (a hypothesis) for what you found.
 
-There is no answer key. Judges reward careful reasoning and honest limits more than any particular result.
+There is no one correct answer. Careful reasoning and honest limits are more important.
 
 ## What You Get
 
@@ -40,7 +40,7 @@ There is no answer key. Judges reward careful reasoning and honest limits more t
 
 The [analysis workflow](3-workflow.md) walks through each box, and the [workflow notebook](notebooks/track01_workflow.ipynb) has a matching section for each one.
 
-## Ground Rules
+## Ground Rules and Notes
 
 - Choosing comparisons and interpreting results is your team's job. Organizers will not suggest gene lists or answers.
 - Each person (donor) counts once. Several samples or cells from one person are not independent evidence.
