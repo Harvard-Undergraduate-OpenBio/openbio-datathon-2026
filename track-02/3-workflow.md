@@ -5,7 +5,7 @@
 [![Cleaning](https://img.shields.io/badge/Open-01_Cleaning-0fe995?style=flat-square)](team/notebooks/01_cleaning.ipynb)
 [![Analysis](https://img.shields.io/badge/Open-02_Analysis-13deba?style=flat-square)](team/notebooks/02_analysis.ipynb)
 
-Seven steps take you from raw files to a headline finding. Steps 2 and 3 use [`01_cleaning.ipynb`](team/notebooks/01_cleaning.ipynb). Steps 3 to 7 use [`02_analysis.ipynb`](team/notebooks/02_analysis.ipynb). The notebooks do the coding mechanics. Your team makes the decisions, marked **You decide** below and in the notebooks. You are welcome and encouraged to extend analyses beyond these guides.
+Seven steps take you from raw files to a headline finding. Steps 2 and 3 use [`01_cleaning.ipynb`](team/notebooks/01_cleaning.ipynb). Steps 3 to 7 use [`02_analysis.ipynb`](team/notebooks/02_analysis.ipynb). The notebooks do the coding mechanics. Your team makes the decisions, marked **You decide** below and in the notebooks. We welcome and encourage you to extend analyses beyond these guides.
 
 | Step | Goal | Notebook |
 |---|---|---|
