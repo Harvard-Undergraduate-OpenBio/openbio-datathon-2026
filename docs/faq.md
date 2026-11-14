@@ -3,7 +3,7 @@
 ## General
 
 **Who can participate?**
-The datathon is open to undergraduate students at Harvard and affiliated institutions. Teams of two to four are recommended.
+The datathon is open to undergraduate and graduate students at Harvard and affiliated institutions. Teams of three is ideal. Teams of two and four are acceptable.
 
 **Do I need prior bioinformatics experience?**
 No. Each track guide ([Track 1](../track-01/README.md), [Track 2](../track-02/README.md)) explains the biology and statistics as you go, and the notebooks do the coding mechanics. Some Python experience helps.
