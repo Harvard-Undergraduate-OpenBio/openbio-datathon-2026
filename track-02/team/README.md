@@ -22,7 +22,7 @@ OpenBio 2026 Datathon, Track 2: Cardiovascular Health in Women
 
 ## How to Run
 
-1. Put the raw files in `track-02/data/` (see the [data guide](../data/README.md)).
+1. The raw files are already in `track-02/data/` (see the [data guide](../data/README.md)). On Colab the first notebook cell downloads them.
 2. Install packages: `pip install -r requirements.txt`
 3. Run `notebooks/01_cleaning.ipynb`, then `notebooks/02_analysis.ipynb`, top to bottom.
 

@@ -34,8 +34,8 @@ Only clean the datasets you use. The notebook has one section per dataset.
 | Dataset | Main cleaning tasks | You decide |
 |---|---|---|
 | 1 | Convert age to years, keep women, remove impossible blood pressure and body measurements, calculate BMI | Plausible ranges for blood pressure, height and weight |
-| 2 | Split blood pressure into two numbers, encode Yes/No and ordered levels | Women only, or women compared with men |
-| 3 | Find the real header rows, reshape wide to long, split confidence intervals, standardize country names | Which columns you need |
+| 2 | Split blood pressure into two numbers, encode sex and the ordered diet levels | Women only, or women compared with men |
+| 3 | Find the real header rows, reshape wide to long, split confidence intervals, standardize country names | Which rows hold the headers and which columns you need |
 
 How to pick a plausibility range: look at the distribution first (the notebook plots it), then choose a range you can defend in one sentence using what is physically possible. Write that reason in the log.
 

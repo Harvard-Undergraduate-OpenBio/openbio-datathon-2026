@@ -40,7 +40,7 @@ Your team's work goes in [`track-02/team/`](team). That folder already has the l
 
 1. Open [Google Colab](https://colab.research.google.com) and choose **File > Open notebook > GitHub**.
 2. Sign in to GitHub when asked, tick **Include private repos**, pick your team repository and open `track-02/team/notebooks/01_cleaning.ipynb`.
-3. Run the first code cell. It finds the data automatically.
+3. Run the first code cell. It downloads the data from the main repository for you, so there is nothing to upload.
 
 To save your edits back to the team repository, use **File > Save a copy in GitHub**.
 
@@ -56,16 +56,29 @@ Then open `track-02/team/notebooks/01_cleaning.ipynb`. No conda? Run `pip instal
 
 ## Part C: Loading the Data by Hand
 
-The notebooks load the files for you. If you start a fresh notebook, two ways work on Colab.
+The data files are in [`track-02/data`](data), so cloning the repository already downloads them. You do not need a Kaggle account. The [data folder page](data/README.md) has a download link for each file.
 
-**Upload directly.** Click the folder icon in the left sidebar, then the upload icon, and choose the CSV. Files uploaded this way disappear when the session ends.
+The notebooks load the files for you. If you start a fresh notebook, three ways work on Colab.
+
+**Read straight from GitHub.** Nothing to download or upload.
 
 ```python
 import pandas as pd
-df1 = pd.read_csv("cardiovascular_dataset_OpenBio_Final.csv")
-df2 = pd.read_csv("heart_attack_prediction_dataset_OpenBio_Final.csv")
+base = "https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026/raw/main/track-02/data/"
+df1 = pd.read_csv(base + "cardiovascular_dataset_OpenBio_Final.csv", sep=";")
+df2 = pd.read_csv(base + "heart_attack_prediction_dataset_OpenBio_Final.csv")
+s1 = pd.read_csv(base + "gbd/table_s1.csv", header=None)
+s2 = pd.read_csv(base + "gbd/table_s2.csv", header=None)
 display(df1)
 display(df2)
+```
+
+**Upload directly.** Download the files from the [data folder page](data/README.md). In Colab, click the folder icon in the left sidebar, then the upload icon, and choose the files. Files uploaded this way disappear when the session ends.
+
+```python
+import pandas as pd
+df1 = pd.read_csv("cardiovascular_dataset_OpenBio_Final.csv", sep=";")
+df2 = pd.read_csv("heart_attack_prediction_dataset_OpenBio_Final.csv")
 ```
 
 **Mount Google Drive.** Upload the files to a `datathon` folder in your Drive, then run the code below and approve the permissions prompt.
@@ -73,17 +86,18 @@ display(df2)
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-df1 = pd.read_csv('/content/drive/MyDrive/datathon/cardiovascular_dataset_OpenBio_Final.csv')
+df1 = pd.read_csv('/content/drive/MyDrive/datathon/cardiovascular_dataset_OpenBio_Final.csv', sep=';')
 ```
 
 **Tips:**
 
-- If the cardiovascular CSV loads as a single column, the file is semicolon-separated. Use `pd.read_csv(path, sep=';')`.
-- Load Tables S1 and S2 with `pd.read_excel` or `pd.read_csv` depending on the format, and inspect the header rows before trusting the column names.
+- The cardiovascular CSV is semicolon-separated. If it loads as a single column, add `sep=';'`.
+- Tables S1 and S2 are CSV files. Load them with `pd.read_csv(path, header=None)` and inspect the first rows before trusting the column names. The first row is the table title.
+- If a data file on your computer is empty, your copy is from before the data release. Run `git pull upstream main` in your team repository, or `git pull` in a plain clone of the main repository.
 
 ## You Are Ready When
 
 - Every teammate can open the team repository.
-- The first two code cells of `01_cleaning.ipynb` run and print the size of each dataset.
+- The setup cell of `01_cleaning.ipynb` runs and the Dataset 1 cell prints `Dataset 1: 70,000 rows, 13 columns`.
 
 Stuck? Ask a mentor or email exec@harvardopenbio.org.

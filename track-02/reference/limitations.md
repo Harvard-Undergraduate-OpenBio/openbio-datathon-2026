@@ -12,7 +12,7 @@ This is health data about women, and conclusions could shape how people think ab
 | **Sex and gender** | These datasets record a binary variable. Note this limitation and avoid overgeneralizing to people outside the categories recorded. |
 | **Not medical advice** | Nothing produced in this datathon is a diagnostic tool or clinical guidance. Include a short statement saying so in your final deliverables. |
 | **Transparent uncertainty** | Report confidence intervals or variability where possible, and describe limitations. |
-| **Data licenses** | Follow the terms on the original Kaggle pages and the publisher's terms for the article. |
+| **Data licenses** | Follow the terms on the original Kaggle pages and the article's CC BY-NC 4.0 license. Cite each source you use. The [source manifest](../data/provenance/source_manifest.md) lists the terms. |
 
 ## A Statement You Can Adapt
 

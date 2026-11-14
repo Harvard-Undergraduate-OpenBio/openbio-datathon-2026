@@ -1,0 +1,9 @@
+# SHA-256 of every source file as downloaded on 2026-11-13. Organizer-side record, participants do not need these files.
+# Dataset 1: Kaggle sulianova/cardiovascular-disease-dataset, version 1
+b78ff607480810c3e27de3e11d52c4962a3a81dbb3d69365e1cf3394a67c2b23  cardiovascular-disease-dataset.zip
+21a705d23381b0dfd6a6416da701b490744f1fc3b47e9ff3db3968c420ffa10c  cardiovascular-disease-dataset.zip:cardio_train.csv
+# Dataset 2: Kaggle iamsouravbanerjee/heart-attack-prediction-dataset, version 2
+9beaaf8bca39766b33741bed4f3d5cceab5e68c454a14d3d3e7067a1fa841cc6  heart-attack-prediction-dataset.zip
+b61bf208b5392d765f18be2d268bb2421a2415e8795bb730161c989eb6698be6  heart-attack-prediction-dataset.zip:heart_attack_prediction_dataset.csv
+# Dataset 3: supplement of PMC12237364, version 1 (MD5 listed by PMC: 7c0bf8b00724c572353e4fd63df37d5b)
+167704da1ee9f7f2320d50de46c66cd9030246f5acf74250a457463d4d8b12f0  medi-104-e43215-s001.docx
