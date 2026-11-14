@@ -24,7 +24,7 @@ Keep a copy of the [analysis plan template](templates/analysis-plan.md) open and
 
 Read the [starter questions](starter-questions.md) and pick one. Questions 1, 2, 5 and 6 work with the core data alone and are good first choices.
 
-**Decide** your question, written 1-2 sentences in your analysis plan.
+**Decide** your question, write 1-2 sentences in your analysis plan.
 
 ## 2. Load and Check the Data
 
@@ -35,7 +35,7 @@ If a check fails, note it in your plan and tell an organizer. Do not edit the da
 ## 3. Explore the Samples
 
 Before testing anything, look at how the samples relate to each other. 
-This tells you what the biggest sources of difference in the data are, and whether preeclampsia is one of them. 
+This tells you what the biggest sources of difference in the data are, and whether preeclampsia is one of them.
 
 ### What a PCA plot is
 
