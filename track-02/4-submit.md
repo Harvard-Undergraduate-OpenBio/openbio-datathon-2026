@@ -9,7 +9,7 @@
 |---|---|---|
 | 1 | Reproducible code in your team GitHub repository, with a README, clear markdown explanations and a cleaning log | `track-02/team/` |
 | 2 | A recorded presentation of five minutes or less | Link in your team README |
-| 3 | A written science communication article about your work | `track-02/team/docs/article.md` |
+| 3 | A written science communication article about your work, following the [HUDP article guide](../docs/article-guide.md) | `track-02/team/docs/article.md` |
 | 4 | One headline visual showing your single most important finding to a non-specialist, used in both the video and the article | `track-02/team/figures/headline.png` |
 
 Every deliverable must include a short statement that your work is not medical advice or a diagnostic tool.
@@ -50,7 +50,27 @@ One recording, five minutes at most. Every team member must appear or speak at l
 
 ## 3. Science Communication Article
 
-Write it in [`team/docs/article.md`](team/docs/article.md). A partner club will provide the article guidelines. Until then, the template gives a starting structure. Use your headline visual.
+Write it in [`team/docs/article.md`](team/docs/article.md) and follow the [article guide](../docs/article-guide.md). The guidelines come from the [Harvard Undergraduate Data Project (HUDP)](https://www.hudp.org/). The template already has the guide's outline.
+
+The main requirements:
+
+| What | Requirement |
+|---|---|
+| Structure | Introduction, data and methods, insights, unanswered questions, conclusions with limitations and next steps, links to data and code |
+| Data and methods | A short paragraph at most. Say where the data came from and anything that limits your insights, such as synthetic data |
+| Graphs | At least four, each with a title, axis labels and a caption. Your headline visual counts as one |
+| Language | Written for a general reader, with every term and statistical concept explained |
+| Claims | Each one backed by data, with limitations stated |
+| Title | A short title and a subtitle that adds detail |
+| Credits | Authors, links to outside sources, a link to your team repository and acknowledgements |
+
+Where the four graphs come from: `02_analysis.ipynb` saves your headline visual and your model graph (`forest_plot.png` or `regression_line.png`) to `team/figures/`. To save any other graph from a notebook, add this line just before its `plt.show()`:
+
+```python
+plt.savefig(FIGURES / "my_graph.png", dpi=200, bbox_inches="tight")
+```
+
+Add a graph to the article with `![Short description of the graph](../figures/my_graph.png)`.
 
 ## 4. Headline Visual
 

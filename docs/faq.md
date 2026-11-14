@@ -49,7 +49,7 @@ Logistic or linear regression covers most questions, and the [workflow](../track
 
 **What format should my submission be?**
 Track 1: a reproducible notebook or script, two to four figures, a brief written interpretation and a completed hypothesis card. See [Track 1: Submit](../track-01/4-submit.md).
-Track 2: a team repository, a recorded presentation of five minutes or less, a science communication article and one headline visual. See [Track 2: Submit](../track-02/4-submit.md).
+Track 2: a team repository, a recorded presentation of five minutes or less, a science communication article that follows the [article guide](article-guide.md) and one headline visual. See [Track 2: Submit](../track-02/4-submit.md).
 
 **How are submissions judged?**
 See the [rubric](rubric.md). Track 2 judging criteria will be announced.

@@ -24,6 +24,8 @@ The [limitations page](reference/limitations.md) lists what this kind of data ca
 | Hypothesis card | [hypothesis-card.md](templates/hypothesis-card.md) | One per team |
 | Final write-up | [final-submission.md](templates/final-submission.md) | One to two pages, citing every dataset ([citations](reference/citations.md)) |
 
+**Writing tips:** the [article guide](../docs/article-guide.md) from the [Harvard Undergraduate Data Project (HUDP)](https://www.hudp.org/) has advice on plain-language writing and clear graphs. It is optional for Track 1. Use its [writing style](../docs/article-guide.md#writing-style) and [graphs](../docs/article-guide.md#graphs) sections for your write-up and figures. Its outline and four-graph minimum apply to Track 2 only.
+
 ## How to Submit
 
 Follow the [submission instructions](../submissions/README.md). In short, put everything in `submissions/your-team-name/` and open a pull request before the deadline.

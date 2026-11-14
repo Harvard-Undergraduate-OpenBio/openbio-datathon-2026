@@ -96,7 +96,7 @@ These rows show the format only, not expected results. Check each claim against 
 
 ## 7. Make a Headline Visual
 
-One graph that shows your single most important finding to a non-specialist. You will use it in both the video and the article. A good headline visual:
+One graph that shows your single most important finding to a non-specialist. You will use it in both the video and the article. The article needs at least four graphs in total ([article guide](../docs/article-guide.md#graphs)), so save other useful graphs as you go. A good headline visual:
 
 - Has a title that states the finding in plain words
 - Labels axes in everyday language, with units

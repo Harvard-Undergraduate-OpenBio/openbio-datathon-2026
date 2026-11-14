@@ -35,7 +35,7 @@ OpenBio 2026 Datathon, Track 2: Cardiovascular Health in Women
 | `src/` | Helper functions (optional) |
 | `figures/` | Exported graphs, including `headline.png` |
 | `docs/cleaning_log.md` | Each cleaning rule and the records affected |
-| `docs/article.md` | Science communication article |
+| `docs/article.md` | Science communication article, following the [HUDP article guide](../../docs/article-guide.md) |
 | `requirements.txt` | Python packages |
 
 ## Key Findings

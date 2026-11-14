@@ -50,7 +50,7 @@ openbio-datathon-2026/
 │   ├── team/              Team repository layout: notebooks, figures, docs
 │   └── reference/         Data catalog, citations, responsible use
 ├── submissions/           Where Track 1 teams commit their final work
-├── docs/                  Event info: FAQ, rubric, schedule, support
+├── docs/                  Event info: FAQ, rubric, article guide, schedule, support
 └── environment/           Python environment files
 ```
 
@@ -58,6 +58,7 @@ openbio-datathon-2026/
 
 - [FAQ](docs/faq.md)
 - [Judging rubric](docs/rubric.md)
+- [Article guide](docs/article-guide.md), from the Harvard Undergraduate Data Project (HUDP)
 - [Schedule](docs/schedule.md)
 - [Support and accessibility](docs/support.md)
 
