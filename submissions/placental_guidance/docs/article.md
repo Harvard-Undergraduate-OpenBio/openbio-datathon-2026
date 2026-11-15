@@ -32,11 +32,11 @@ We also used the [Zeisel Lab placental gene-expression browser](https://storage.
 
 We first identified **369 genes** with significantly different expression between PE and non-PE placentas: 256 had higher expression and 113 had lower expression in PE. We defined significant differences as an adjusted p-value below 0.05 and an absolute log2 fold change of at least 1, equivalent to a twofold or greater difference in expression.
 
-However, all 15 PE samples were delivered between 26 and 34 weeks, while the five term non-PE samples were delivered at approximately 39 weeks. Since placental gene expression changes throughout pregnancy, delivery timing could contribute to some of the differences we observed.
+However, every PE sample was delivered at or before 34 weeks, while some non-PE samples were delivered later. Since placental gene expression changes throughout pregnancy, delivery timing could contribute to some of the differences we observed.
 
 After adjusting for gestational age at delivery and fetal sex, 273 genes were differentially expressed. When we restricted the analysis to deliveries at or before 34 weeks and adjusted for the same factors, 188 genes were differentially expressed. This restricted comparison included 25 samples because the five term non-PE samples were excluded. Its non-PE samples were themselves delivered early for other reasons, such as spontaneous preterm labor or FGR, so they are not a fully healthy comparison group.
 
-Despite the decrease, **163 genes (44% of the original 369) remained significant across all three comparisons**. Another 139 genes (38%) were no longer significant in either adjusted comparison. The decrease was particularly pronounced among genes with lower expression in PE: in the restricted comparison, their number fell from 113 to 32, a 72% reduction, while genes with higher expression fell from 256 to 156, a 39% reduction. This suggests that some initial differences, particularly among genes with lower expression, may reflect delivery timing or other differences between the groups. However, the comparisons cannot establish that timing alone explains these changes.
+The number of differentially expressed genes fell by about half from 369 to 188. The decrease was particularly pronounced among genes with lower expression in PE: in the restricted comparison, their number fell from 113 to 32, a 72% reduction, while genes with higher expression fell from 256 to 156, a 39% reduction. This suggests that some initial differences, particularly among genes with lower expression, may reflect delivery timing or other differences between the groups. However, the comparisons cannot establish that timing alone explains these changes.
 
 ![Figure 2](../figures/figure2.png)
 
