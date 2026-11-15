@@ -53,12 +53,11 @@ The same thresholds were used for all three runs so gene counts can be compared 
 ### 4. Gene browser lookups (at least three genes)
 We looked up **FLT1, ENG and LEP**. We chose them because they:
 - were significant in our results, including Run C,
-- have high read depth, so results are reliable,
-- are known to be involved in preeclampsia.
+- have high read depth, so results are reliable
 
 For each gene, we recorded which cell types use it most, how specific it is, and whether the browser shows a PE vs control difference. We also tried SERPINA3, which had one of the largest increases in PE in Run C, but it could not be displayed in the browser. We plotted ENG, FLT1 and LEP for each Run C sample as boxplots.
 
-We also checked the organizers' marker gene table (36 markers across 9 cell types) using Run C, to see whether whole cell types appeared more or less common in PE.
+Checked the marker gene table (36 markers across 9 cell types) using Run C, to see whether whole cell types appeared more or less common in PE.
 
 ### 5. Optional extension analyses
 We did not use optional extensions. Our analysis used only the required bulk RNA-seq data and the gene browser.
@@ -75,7 +74,6 @@ We did not use optional extensions. Our analysis used only the required bulk RNA
 | **Delivery timing (gestational age)** | No PE sample was delivered after 34 weeks, while some controls were. Placental gene activity may change with gestational age | Added gestational age as a covariate (Run B) and restricted to samples delivered at ≤ 34 weeks (Run C) |
 | **Fetal sex** | The placenta is fetal tissue, so sex differences could affect gene activity | Added fetal sex as a covariate (Runs B and C) |
 | **Fetal growth restriction (FGR)** | Some PE samples also have FGR, and FGR samples without PE are among the controls | Not adjusted, because it is part of how groups are defined; reported as a limitation |
-| **Cell mix** | Bulk RNA mixes many cell types, so a change could mean more of a cell type rather than changed cells | Checked all marker genes per cell type; used the gene browser for cell type context |
 | **Small groups** | Run C has only 10 non PE samples | Reported as a limitation; focused on genes significant in Run C |
 
 ## Expected Figures
@@ -83,7 +81,7 @@ We did not use optional extensions. Our analysis used only the required bulk RNA
 1. PCA colored by clinical group (do PE samples separate from controls?)
 2. PCA colored by gestational age at delivery (does delivery timing drive the same pattern?)
 3. Volcano plots for Runs A, B and C (how the number of significant genes shrinks as timing is accounted for)
-4. Headline visual: boxplots of ENG, FLT1 and LEP in Run C, showing higher activity in PE than in non PE placentas delivered at similar times
+4. Headline visual: Volcano plot
 
 ## References
 
