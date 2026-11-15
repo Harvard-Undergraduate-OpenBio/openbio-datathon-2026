@@ -33,10 +33,10 @@ How much of the difference in gene activity between preeclampsia (PE) and contro
 
 Reproducibility details:
 
-- Notebook or script files: `notebooks/[NOTEBOOK FILENAME].ipynb`
+- Notebook or script files: `notebooks/[placental_guidance_track01_workflow].ipynb`
 - Where we ran it: Google Colab (Python 3, PyDESeq2)
 - Random seeds: none needed; PyDESeq2 and PCA give the same results on every run
-- Expected results after a full run: 369, 273 and 188 genes passing in Runs A, B and C, and 163 genes passing in all three
+- Expected results after a full run: 369, 273 and 188 genes passing in Runs A, B and C
 
 ## Files
 
@@ -58,9 +58,12 @@ We compared 15 PE placentas with non PE placentas in three ways, using the same 
 | B: adjusted | All 30 (15 PE vs 15 non PE) | Gestational age, fetal sex | Same samples, statistically accounting for delivery timing and sex | 273 |
 | C: ≤ 34 weeks | 25 (15 PE vs 10 non PE) | Gestational age, fetal sex | Removes the 5 term controls so both groups were delivered at similar times | 188 |
 
-About 4 in 10 genes that first looked different in PE disappeared once delivery timing was accounted for (139 of 369), especially genes that were lower in PE (113 to 32). 163 genes held up in all three runs, including FLT1, ENG and LEP, which are known to be involved in preeclampsia.
+The number of genes that differed between PE and non PE placentas fell by about half once delivery timing was accounted for (369 to 188). Genes lower in PE dropped the most (113 to 32), compared with genes higher in PE (256 to 156). FLT1, ENG and LEP, which are known to be involved in preeclampsia, remained significantly higher in PE in Run C.
 
-For the gene browser, we chose genes that passed in all three runs, had high read depth and are known in preeclampsia: FLT1, ENG and LEP. The browser showed LEP almost only in syncytiotrophoblast and FLT1 mainly in trophoblast cells, while ENG appeared in several cell types. We also tried SERPINA3, the gene with the largest increase in PE, but it could not be displayed in the browser. Marker genes for each cell type barely changed between groups.
+For the gene browser, we chose genes that were significant in Run C and had high read depth.
+
+
+The browser showed LEP almost only in syncytiotrophoblast and FLT1 mainly in trophoblast cells, while ENG appeared in several cell types. We also tried SERPINA3, the gene with the largest increase in PE, but it could not be displayed in the browser. Marker genes for each cell type barely changed between groups.
 
 **Our hypothesis:** In early onset preeclampsia, once delivery timing is accounted for, placental trophoblast cells (particularly the syncytiotrophoblast) are present in approximately normal proportions but increase the expression of genes encoding factors known to inhibit blood vessel growth (FLT1, ENG) and the hormone leptin (LEP). Many genes that initially appeared decreased in preeclampsia instead reflect earlier delivery.
 
@@ -70,11 +73,11 @@ Our groups are small (only 5 preterm and 5 term controls), and no PE sample was 
 
 | Confounder | Why it matters | How we addressed it |
 |---|---|---|
-| **Delivery timing (gestational age)** | All PE samples were delivered at 26 to 34 weeks; term controls at about 39 weeks. Placental gene activity may change with gestational age | Added gestational age as a covariate (Run B) and restricted to samples delivered at ≤ 34 weeks (Run C) |
-| **Fetal sex** | The placenta is fetal tissue, and sex is unbalanced: PE 10 female / 5 male; non PE 5 female / 10 male | Added fetal sex as a covariate (Runs B and C) |
+| **Delivery timing (gestational age)** | No PE sample was delivered after 34 weeks, while some controls were. Placental gene activity may change with gestational age | Added gestational age as a covariate (Run B) and restricted to samples delivered at ≤ 34 weeks (Run C) |
+| **Fetal sex** | The placenta is fetal tissue, so sex differences could affect gene activity| Added fetal sex as a covariate (Runs B and C)|
 | **Fetal growth restriction (FGR)** | 7 PE samples also have FGR, and 5 FGR samples without PE are among the controls | Not adjusted, because it is part of how groups are defined; reported as a limitation |
 | **Cell mix** | Bulk RNA mixes many cell types, so a change could mean more of a cell type rather than changed cells | Checked all marker genes per cell type; used the gene browser for cell type context |
-| **Flagged samples** | S12, S04 and S15 have blood pressure values that do not match their labels | Kept as released and reported |
+| **Flagged samples** | Some samples have quality flags in the metadata | All samples were kept as released|
 | **Small groups** | Only 5 preterm and 5 term controls | Reported as a limitation; focused on genes that held up across all three runs |
 
 ## Presentation
