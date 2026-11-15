@@ -29,11 +29,11 @@ How much of the difference in gene activity between preeclampsia (PE) and contro
 
 1. The data package is in [`track-01/data`](https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026/tree/main/track-01/data) of the datathon repository. On Colab, the first notebook cell downloads it automatically.
 2. Install packages by following [Track 1 Setup](https://github.com/Harvard-Undergraduate-OpenBio/openbio-datathon-2026/blob/main/track-01/1-setup.md). On Colab, the first cell installs PyDESeq2.
-3. Open `notebooks/[NOTEBOOK FILENAME].ipynb` and choose **Runtime > Restart session and run all**. The full run takes about 5 minutes.
+3. Open `submissions/placental_guidance/notebooks/placental_guidance_track01_workflow.ipynb` and choose **Runtime > Restart session and run all**. The full run takes about 5 minutes.
 
 Reproducibility details:
 
-- Notebook or script files: `notebooks/[placental_guidance_track01_workflow].ipynb`
+- Notebook or script files: `notebooks/placental_guidance_track01_workflow.ipynb`
 - Where we ran it: Google Colab (Python 3, PyDESeq2)
 - Random seeds: none needed; PyDESeq2 and PCA give the same results on every run
 - Expected results after a full run: 369, 273 and 188 genes passing in Runs A, B and C
