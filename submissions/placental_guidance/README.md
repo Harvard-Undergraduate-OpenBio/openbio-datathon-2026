@@ -82,7 +82,7 @@ Our groups are small (only 5 preterm and 5 term controls), and no PE sample was 
 
 ## Presentation
 
-Video link: [ADD UNLISTED YOUTUBE LINK]
+Presentation Path: submissions/placental_guidance/docs/Placental Guidance Track 01_presentation.pdf
 
 ## References
 
