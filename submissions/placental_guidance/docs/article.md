@@ -6,7 +6,7 @@ By Emily Larkins, Iris Lawson-Ryan, Anthie Ntakas-Poulos, and Nicole Zac Soligno
 
 ---
 
-![Figure 1](submissions/placental_guidance/figures/headliner.png)
+![Figure 1](..figures/headliner.png)
 
 **Figure 1. Differential expression in placentas delivered at or before 34 weeks.** Each point is one gene, comparing PE (n = 15) with non-PE (n = 10) placentas after adjusting for gestational age at delivery and fetal sex. Red points (188 genes) meet both thresholds: adjusted p-value below 0.05 and an absolute log2 fold change of at least 1. The dashed line marks an adjusted p-value of 0.05.
 
@@ -38,7 +38,7 @@ After adjusting for gestational age at delivery and fetal sex, 273 genes were di
 
 Despite the decrease, **163 genes (44% of the original 369) remained significant across all three comparisons**. Another 139 genes (38%) were no longer significant in either adjusted comparison. The decrease was particularly pronounced among genes with lower expression in PE: in the restricted comparison, their number fell from 113 to 32, a 72% reduction, while genes with higher expression fell from 256 to 156, a 39% reduction. This suggests that some initial differences, particularly among genes with lower expression, may reflect delivery timing or other differences between the groups. However, the comparisons cannot establish that timing alone explains these changes.
 
-![Figure 2](submissions/placental_guidance/figures/figure2.png)
+![Figure 2](../figures/figure2.png)
 
 **Figure 2. Expression of the 20 most significant genes in placentas delivered at or before 34 weeks.** Boxes show expression (log2 counts per million) in non-PE (blue, n = 10) and PE (red, n = 15) placentas. Values are shown before adjustment for gestational age and fetal sex. Most genes, including FLT1, ENG, and LEP, were more highly expressed in PE; a few, such as TFDP2, GYLTL1B, and DOCK8, were lower.
 
@@ -46,11 +46,11 @@ We also used principal component analysis (PCA) to examine overall gene-expressi
 
 Samples partly separated by clinical group along the first component: most PE samples fell to the right, while term and preterm non-PE samples fell to the left (Figure 3). Notably, preterm non-PE samples grouped with term samples rather than with PE samples of similar gestational age (Figure 4). This suggests that the main expression pattern associated with PE is not explained by delivery timing alone. FGR samples tended to fall lower on the second component. The groups still overlapped, so overall expression patterns do not fully separate PE from non-PE placentas.
 
-![Figure 3](submissions/placental_guidance/figures/figure3.png)
+![Figure 3](../figures/figure3.png)
 
 **Figure 3. Overall placental gene-expression patterns by clinical group.** PCA of all 30 samples. Each point is one placenta, and points closer together have more similar expression. EOPE, early-onset preeclampsia; EOPE+FGR, preeclampsia with fetal growth restriction; FGR, fetal growth restriction without preeclampsia; iPTB, idiopathic preterm birth; TB, term birth.
 
-![Figure 4](submissions/placental_guidance/figures/figure4.png)
+![Figure 4](../figures/figure4.png)
 
 **Figure 4. Overall placental gene-expression patterns by gestational age at delivery.** The same PCA as Figure 3, colored by gestational age at delivery in weeks.
 
@@ -62,7 +62,7 @@ We next examined whether differences in cell composition might explain the resul
 
 To explore where the genes of interest are expressed, we consulted the independent single-cell reference. FLT1 was primarily associated with trophoblast cells, and LEP appeared almost exclusively in the syncytiotrophoblast, the outer placental layer that directly contacts maternal blood. ENG was detected more broadly, including in endothelial cells as well as trophoblasts.
 
-![Figure 5](submissions/placental_guidance/figures/figure5.png)
+![Figure 5](../figures/figure5.png)
 **Figure 5. FLT1, ENG, and LEP expression across placental cell types in an independent single-cell dataset.** (A) Expression in individual cells, grouped by cell type. (B) Expression shown on cell-type clusters. Adapted from the Zeisel Lab placental gene-expression browser (Admati et al., 2023).
 
 Together, these findings are consistent with the possibility that trophoblast cells contribute to the increased expression of genes associated with preeclampsia, rather than the results being driven primarily by a major change in cell proportions. However, the single-cell reference comes from a separate study and cannot establish which cells produced the RNA in our samples.
